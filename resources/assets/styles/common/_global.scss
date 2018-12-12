@@ -1,3 +1,44 @@
+/** Typography */
+@font-face {
+  font-family: Pitch-Medium;
+  font-display: block;
+  src: url('../fonts/PitchWeb-Medium.eot');
+  src:
+    url('../fonts/PitchWeb-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PitchWeb-Medium.woff2') format('woff2'),
+    url('../fonts/PitchWeb-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: Pitch-Medium-Italic;
+  font-display: block;
+  src: url('../fonts/PitchWeb-MediumItalic.eot');
+  src:
+    url('../fonts/PitchWeb-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PitchWeb-MediumItalic.woff2') format('woff2'),
+    url('../fonts/PitchWeb-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: Pitch-Bold-Italic;
+  font-display: block;
+  src: url('../fonts/PitchWeb-BoldItalic.eot');
+  src:
+    url('../fonts/PitchWeb-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PitchWeb-BoldItalic.woff2') format('woff2'),
+    url('../fonts/PitchWeb-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: Pitch-Bold;
+  font-display: block;
+  src: url('../fonts/PitchWeb-Bold.eot');
+  src:
+    url('../fonts/PitchWeb-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PitchWeb-Bold.woff2') format('woff2'),
+    url('../fonts/PitchWeb-Bold.woff') format('woff');
+}
+
 body {
   background: #222720;
   color: #fff;
@@ -6,7 +47,7 @@ body {
   align-items: center;
   align-content: center;
   text-align: center;
-  font-family: Pitch-BoldItalic, Arial, Helvetica, sans-serif;
+  font-family: Pitch-Bold-Italic, Arial, Helvetica, sans-serif;
   line-height: 14px;
 }
 
@@ -14,6 +55,7 @@ h1,
 h2,
 p {
   color: #c2967b;
+  font-weight: normal;
 }
 
 h3,
@@ -22,6 +64,7 @@ h5,
 h6,
 address {
   color: #fff;
+  font-weight: normal;
 }
 
 h2 {
