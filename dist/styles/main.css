@@ -14875,9 +14875,23 @@ p {
 
 /* line 11, resources/assets/styles/layouts/_header.scss */
 
+.banner img {
+  max-width: 80vw;
+}
+
+/* line 15, resources/assets/styles/layouts/_header.scss */
+
 .banner h2 {
   width: 45%;
   margin: 3.25rem 0 0 0;
+}
+
+@media (max-width: 640px) {
+  /* line 22, resources/assets/styles/layouts/_header.scss */
+
+  .banner h2 {
+    width: 75%;
+  }
 }
 
 /* line 1, resources/assets/styles/layouts/_footer.scss */

@@ -8,9 +8,19 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
 
+  img {
+    max-width: 80vw;
+  }
+
   h2 {
     width: 45%;
     margin: 3.25rem 0 0 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .banner h2 {
+    width: 75%;
   }
 }
 
