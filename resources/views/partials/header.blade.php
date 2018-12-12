@@ -13,7 +13,7 @@
   <?php }
   ?>
     {{-- <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a> --}}
-    <img src="@asset('images/GreenwoodLogo.svg')" />
+    <img src="@asset('images/GreenwoodLogo.svg')" alt="Greenwood Distillers Logo" />
     <h2><?php echo $sub_heading; ?></h2>
     {{-- <nav class="nav-primary">
       @if (has_nav_menu('primary_navigation'))

@@ -7,7 +7,7 @@
   @while(have_posts()) @php the_post() @endphp
       @include('partials.content-page')
   @endwhile
-  <img class="doodle" src="@asset('images/sketchBottle.svg')" />
+  <img class="doodle" src="@asset('images/sketchBottle.svg')" alt="Greenwood Bottle Sketch" />
   <?php
   // check if the repeater field has rows of data
   if( have_rows('hours_of_operation', 'option') ):?>
@@ -23,5 +23,5 @@
   </div>
   <?php else :
   endif; ?>
-<img src="@asset('images/GreenwoodBadge.svg')" />
+<img src="@asset('images/GreenwoodBadge.svg')" alt="Greenwood Distillers Logo" />
 @endsection
