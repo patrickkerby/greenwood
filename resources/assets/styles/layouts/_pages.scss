@@ -9,3 +9,9 @@ img.doodle {
   left: 50%;
   margin-left: -37px;
 }
+
+@media (max-width: 640px) {
+  img.doodle {
+    top: -75px;
+  }
+}

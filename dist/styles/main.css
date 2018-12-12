@@ -14923,6 +14923,14 @@ img.doodle {
   margin-left: -37px;
 }
 
+@media (max-width: 640px) {
+  /* line 14, resources/assets/styles/layouts/_pages.scss */
+
+  img.doodle {
+    top: -75px;
+  }
+}
+
 /* line 1, resources/assets/styles/layouts/_tinymce.scss */
 
 body#tinymce {
