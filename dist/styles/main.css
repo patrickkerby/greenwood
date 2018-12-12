@@ -14889,8 +14889,15 @@ p {
 @media (max-width: 640px) {
   /* line 22, resources/assets/styles/layouts/_header.scss */
 
+  .banner {
+    min-height: 400px;
+  }
+
+  /* line 25, resources/assets/styles/layouts/_header.scss */
+
   .banner h2 {
     width: 75%;
+    font-size: 18px;
   }
 }
 

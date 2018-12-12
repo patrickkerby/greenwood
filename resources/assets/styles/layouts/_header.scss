@@ -19,8 +19,13 @@
 }
 
 @media (max-width: 640px) {
-  .banner h2 {
-    width: 75%;
+  .banner {
+    min-height: 400px;
+
+    h2 {
+      width: 75%;
+      font-size: 18px;
+    }
   }
 }
 
