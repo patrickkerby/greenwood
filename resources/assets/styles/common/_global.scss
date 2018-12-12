@@ -1,0 +1,40 @@
+body {
+  background: #222720;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  font-family: Pitch-BoldItalic, Arial, Helvetica, sans-serif;
+  line-height: 14px;
+}
+
+h1,
+h2,
+p {
+  color: #c2967b;
+}
+
+h3,
+h4,
+h5,
+h6,
+address {
+  color: #fff;
+}
+
+h2 {
+  font-size: 21px;
+  letter-spacing: -0.4px;
+}
+
+h4 {
+  font-family: Pitch-Bold, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+p {
+  font-size: 17px;
+  margin-bottom: 1.5rem;
+}

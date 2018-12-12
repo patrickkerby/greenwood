@@ -1,0 +1,23 @@
+.banner {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+
+  h2 {
+    width: 45%;
+    margin: 3.25rem 0 0 0;
+  }
+}
+
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
