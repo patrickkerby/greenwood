@@ -12,6 +12,9 @@
 
   $image_first_slide = get_field('image_first_slide'); 
 
+  $stockist_title = get_field('stockist_title');
+  $stockist_subtitle = get_field('stockists_subtitle');
+
 @endphp
 
 @extends('layouts.app')
@@ -47,14 +50,11 @@
       </svg>
       <div class="carousel-inner">  
           <div class="carousel-item active" style="background-image: url('{{ $image_first_slide }}');"></div>
-
           @php if( have_rows('image_slider') ):
             while ( have_rows('image_slider') ) : the_row(); 
             $image_slide = get_sub_field('image_slider'); 
           @endphp
-          
           <div class="carousel-item" style="background-image: url('{{ $image_slide }}');"></div>
-          
           @php endwhile;
             else :
               // no rows found
@@ -68,6 +68,26 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
+        </div>
+      </section>
+
+      <section class="stockists container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <h2>{{ $stockist_title }}</h2>
+            <h3>{{ $stockist_subtitle }}</h3>
+          </div>
+        </div>
+        <div class="row">
+          @php if( have_rows('stockists') ):
+            while ( have_rows('stockists') ) : the_row(); 
+              $info = get_sub_field('info'); 
+              echo '<div class="col-md-4 info">'. $info .'</div>';
+            endwhile;
+            else :
+              // no rows found
+            endif;
+          @endphp
         </div>
       </section>
   @endwhile

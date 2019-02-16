@@ -12,6 +12,7 @@
   h3 {
     font-size: 20px;
     margin-bottom: 45px;
+    line-height: 1;
   }
 }
 
@@ -71,5 +72,20 @@ section.carousel-fade {
 
   .frame-bottom {
     bottom: 0;
+  }
+}
+
+.stockists {
+  text-align: center;
+  padding: 3rem 0;
+
+  .info {
+    margin-top: 2rem;
+    text-align: left;
+    line-height: 1;
+
+    p {
+      color: $charcoal;
+    }
   }
 }

@@ -15490,9 +15490,10 @@ footer .nav a {
 .main h3 {
   font-size: 20px;
   margin-bottom: 45px;
+  line-height: 1;
 }
 
-/* line 18, resources/assets/styles/layouts/_pages.scss */
+/* line 19, resources/assets/styles/layouts/_pages.scss */
 
 .product {
   background-repeat: no-repeat;
@@ -15501,7 +15502,7 @@ footer .nav a {
 }
 
 @media (max-width: 991.98px) {
-  /* line 18, resources/assets/styles/layouts/_pages.scss */
+  /* line 19, resources/assets/styles/layouts/_pages.scss */
 
   .product {
     background-size: 70%;
@@ -15510,13 +15511,13 @@ footer .nav a {
 }
 
 @media (max-width: 575.98px) {
-  /* line 18, resources/assets/styles/layouts/_pages.scss */
+  /* line 19, resources/assets/styles/layouts/_pages.scss */
 
   .product {
     background: none !important;
   }
 
-  /* line 31, resources/assets/styles/layouts/_pages.scss */
+  /* line 32, resources/assets/styles/layouts/_pages.scss */
 
   .product img {
     width: 80%;
@@ -15524,7 +15525,7 @@ footer .nav a {
   }
 }
 
-/* line 37, resources/assets/styles/layouts/_pages.scss */
+/* line 38, resources/assets/styles/layouts/_pages.scss */
 
 .product .button {
   margin: 2rem 0 0 0;
@@ -15533,13 +15534,13 @@ footer .nav a {
   display: inline-flex;
 }
 
-/* line 43, resources/assets/styles/layouts/_pages.scss */
+/* line 44, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade {
   background: #222720;
 }
 
-/* line 46, resources/assets/styles/layouts/_pages.scss */
+/* line 47, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade .carousel-inner {
   height: 800px;
@@ -15549,14 +15550,14 @@ section.carousel-fade .carousel-inner {
   display: flex;
 }
 
-/* line 51, resources/assets/styles/layouts/_pages.scss */
+/* line 52, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade .carousel-inner .carousel-item {
   background-position: center center;
   background-size: cover;
 }
 
-/* line 57, resources/assets/styles/layouts/_pages.scss */
+/* line 58, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade svg {
   width: 100%;
@@ -15565,22 +15566,43 @@ section.carousel-fade svg {
   z-index: 5;
 }
 
-/* line 63, resources/assets/styles/layouts/_pages.scss */
+/* line 64, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade svg polygon {
   fill: #fff;
 }
 
-/* line 68, resources/assets/styles/layouts/_pages.scss */
+/* line 69, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade .frame-top {
   top: 0;
 }
 
-/* line 72, resources/assets/styles/layouts/_pages.scss */
+/* line 73, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade .frame-bottom {
   bottom: 0;
+}
+
+/* line 78, resources/assets/styles/layouts/_pages.scss */
+
+.stockists {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+/* line 82, resources/assets/styles/layouts/_pages.scss */
+
+.stockists .info {
+  margin-top: 2rem;
+  text-align: left;
+  line-height: 1;
+}
+
+/* line 87, resources/assets/styles/layouts/_pages.scss */
+
+.stockists .info p {
+  color: #222720;
 }
 
 /* line 1, resources/assets/styles/layouts/_tinymce.scss */
