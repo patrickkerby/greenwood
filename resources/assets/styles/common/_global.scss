@@ -39,8 +39,16 @@
     url('../fonts/PitchWeb-Bold.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'millenniumregular';
+  src:
+    url('../fonts/millennium-webfont.woff2') format('woff2'),
+    url('../fonts/millennium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,6 +56,7 @@ body {
   text-align: center;
   font-family: Pitch-Bold-Italic, Arial, Helvetica, sans-serif;
   line-height: 14px;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -62,7 +71,6 @@ h4,
 h5,
 h6,
 address {
-  color: #fff;
   font-weight: normal;
 }
 
@@ -83,7 +91,35 @@ h5 {
   font-size: 20px;
 }
 
-p {
+p,
+li {
+  font-family: Pitch-Medium, serif;
   font-size: 17px;
   margin-bottom: 1.5rem;
+  line-height: 1.25;
+}
+
+ul,
+ol {
+  margin-bottom: 2rem;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+em {
+  font-family: Pitch-Medium-Italic, serif;
+}
+
+strong {
+  font-family: Pitch-Bold, Arial, Helvetica, sans-serif;
+}
+
+em strong {
+  font-family: Pitch-Bold-Italic, serif;
+}
+
+strong em {
+  font-family: Pitch-Bold-Italic, serif;
 }

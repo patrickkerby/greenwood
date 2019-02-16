@@ -5,6 +5,7 @@ footer {
   position: relative;
   padding: 150px 0 0 0;
   border-bottom: 50px solid $charcoal-dark;
+  color: $white;
 
   @include media-breakpoint-down(xs) {
     padding: 75px 0 0 0;
@@ -38,16 +39,7 @@ footer {
     margin-bottom: 2rem;
 
     a {
-      padding: 1rem 2rem;
       margin: 0.5rem;
-      border: solid 3px $bronze-light;
-
-      &:hover {
-        text-decoration: none;
-        border: solid 3px $bronze-dark;
-        color: $bronze-dark;
-        transition: all 0.4s ease-in-out;
-      }
     }
   }
 }

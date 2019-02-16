@@ -31,9 +31,9 @@
       endif; ?>
       @php dynamic_sidebar('sidebar-footer') @endphp
       <div class="nav col-sm-12">
-        <a href="">Home / Product</a>
-        <a href="">The Distillery</a>
-        <a href="">Location / Contact</a>
+        <a class="button" href="">Home / Product</a>
+        <a class="button" href="">The Distillery</a>
+        <a class="button" href="">Location / Contact</a>
       </div>
     </div>
   </div>

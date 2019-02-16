@@ -1,17 +1,41 @@
 .main {
   position: relative;
-  padding: 7.5rem 0 3.25rem 0;
+  padding: 3rem 0 3.25rem 0;
+  text-align: left;
+
+  h2 {
+    font-family: millenniumregular, serif;
+    text-transform: lowercase;
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 45px;
+  }
 }
 
-img.doodle {
-  position: absolute;
-  top: -100px;
-  left: 50%;
-  margin-left: -37px;
-}
+.product {
+  background-repeat: no-repeat;
+  background-position: 110% 150%;
+  padding: 3rem 0;
 
-@media (max-width: 640px) {
-  img.doodle {
-    top: -75px;
+  @include media-breakpoint-down(md) {
+    background-size: 70%;
+    background-position: 140% center;
+  }
+
+  @include media-breakpoint-down(xs) {
+    background: none !important;
+
+    img {
+      width: 80%;
+      margin: 0 0 3rem 0;
+    }
+  }
+
+  .button {
+    margin: 2rem 0 0 0;
+    display: inline-flex;
   }
 }
