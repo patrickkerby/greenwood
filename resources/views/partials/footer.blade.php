@@ -32,7 +32,7 @@
       @php dynamic_sidebar('sidebar-footer') @endphp
       <div class="nav col-sm-12">
         <a class="button" href="https://www.greenwooddistillers.ca">Home / Product</a>
-        <a class="button" href="/about">The Distillery</a>
+        <a class="button" href="">The Distillery</a>
         <a class="button" href="mailto:info@greenwooddistillers.ca">Location / Contact</a>
       </div>
     </div>
