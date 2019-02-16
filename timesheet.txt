@@ -1,9 +1,17 @@
-Timing:
+Day 1 (5pm - 3am):                                                 Total Time Spent
   Phone call:                                       15 mins
   Footer:                                     3hrs
-  CTA:                                              45 mins     -   4hrs
+  CTA:                                              45 mins     -   4 hrs
   Flexbox and the header and CTA spacing:     1hr   45 mins     -   5:45
   Wassail Product + Mobile Styles:            1hr   45 mins     -   7:30
   Image Carousel:                             1hr               -   8:30
   Carousel SVG frame                                45 mins     -   9:15
-  Stockists                                         35 mins     -   9:53
+  Stockists                                         45 mins     -   10:00
+
+Day 2 (9am - )
+  Stockists                                         35 mins     -   10:35   / 0:35
+  Main Navigation                                   15 mins     -   10:50   / 0:50
+  About Page setup + ACF                            25 mins     -   11:15   / 1:15
+  Team section                                      35 mins     -   11:50   / 1:50
+  Distillery section                                50 mins     -   12:40   / 2:40
+  PHoto Gallery

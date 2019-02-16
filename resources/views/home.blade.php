@@ -82,13 +82,14 @@
           @php if( have_rows('stockists') ):
             while ( have_rows('stockists') ) : the_row(); 
               $info = get_sub_field('info'); 
-              echo '<div class="col-md-4 info">'. $info .'</div>';
+              echo '<div class="col-md-4 col-sm-6 info">'. $info .'<svg viewBox="0 0 10 10"><polygon points="5,0 0,5 5,10 10,5"></polygon></svg></div>';
             endwhile;
             else :
               // no rows found
             endif;
           @endphp
         </div>
+        <a href="#" class="button">Learn more about the distillery</a>
       </section>
   @endwhile
 @endsection

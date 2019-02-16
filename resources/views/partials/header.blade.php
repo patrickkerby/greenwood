@@ -14,23 +14,24 @@
       <header class="banner row angle--bottom-left">
   <?php }
   ?>
-    {{-- <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a> --}}
+    <nav class="nav-primary">
+      @if (has_nav_menu('primary_navigation'))
+        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
+      @endif
+    </nav>
     <div class="subheading col-sm-8">
       <img src="@asset('images/GreenwoodLogo.svg')" alt="Greenwood Distillers Logo" />
       <?php echo $sub_heading; ?>
     </div>
-    {{-- <nav class="nav-primary">
-      @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-      @endif
-    </nav> --}}
   </header>
+  @if ( $intro_bar )
+  @endphp
   <img class="doodle" src="@asset('images/sketchBottle.svg')" alt="Greenwood Bottle Sketch" />
   <section class="intro-bar container-fluid angle--bottom-right">
     <div class="row no-gutters justify-content-center">
-      <div class="col-sm-4">
+      <div class="col-sm-4 col-xs-8">
         <h3>{{ $intro_bar }}</h3>
       </div>
     </div>
   </section>
-
+  @endif

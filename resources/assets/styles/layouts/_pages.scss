@@ -77,15 +77,128 @@ section.carousel-fade {
 
 .stockists {
   text-align: center;
-  padding: 3rem 0;
+  padding: 3rem 0 2rem 0;
 
   .info {
     margin-top: 2rem;
-    text-align: left;
+    text-align: center;
     line-height: 1;
 
     p {
       color: $charcoal;
     }
+
+    svg {
+      width: 10px;
+      height: 10px;
+      margin: 1.5rem 0;
+
+      polygon {
+        fill: $bronze-medium;
+      }
+    }
+
+    &:nth-last-child(-n+3) {
+      svg {
+        display: none;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      svg {
+        display: inline-flex;
+      }
+
+      &:nth-last-child(-n+1) {
+        svg {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .button {
+    margin-top: 3rem;
+    display: inline-flex;
+  }
+}
+
+// About Page
+.team {
+  text-align: center;
+
+  .member {
+    padding: 2rem;
+
+    h4 {
+      color: $bronze-medium;
+      font-size: 19px;
+      font-family: $bold;
+    }
+
+    &:nth-child(odd) {
+      border-right: solid 3px $light-grey;
+    }
+  }
+
+  div.member:nth-child(-n+2) {
+    border-bottom: solid 3px $light-grey;
+  }
+
+  img {
+    max-width: 80%;
+  }
+}
+
+.distillery {
+  text-align: center;
+  background: $light-grey;
+  padding: 8rem 0;
+  margin: 4rem 0;
+  -webkit-clip-path: polygon(0 7%, 100% 0, 100% 91%, 0% 100%);
+  clip-path: polygon(0 7%, 100% 0, 100% 91%, 0% 100%);
+
+  h2 {
+    color: $bronze-medium;
+    margin-bottom: 2.5rem;
+  }
+
+  .content {
+    padding: 0 2rem;
+
+    p {
+      color: $charcoal;
+      font-size: 1.1rem;
+    }
+
+    img {
+      margin: 4rem auto;
+      max-width: 80%;
+    }
+  }
+}
+
+//Gallery
+.gallery {
+  .feature {
+    padding: 6rem 0;
+    background: $charcoal;
+    text-align: center;
+    height: 66vw;
+  }
+  // .row > div:nth-child(2),
+  // .row > div:nth-child(3),
+  // .row > div:nth-child(4),
+  // .row > div:nth-child(5) {
+  //   width: 30%;
+  //   background: $light-grey;
+  //   height: 33vw;
+  // }
+
+  .image a {
+    background: $light-grey;
+    height: 33vw;
+    margin: 5px;
+    display: flex;
   }
 }
