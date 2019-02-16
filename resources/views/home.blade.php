@@ -71,7 +71,7 @@
         </div>
       </section>
 
-      <section class="stockists container">
+      <section id="stockists" class="stockists container">
         <div class="row justify-content-center">
           <div class="col-md-10">
             <h2>{{ $stockist_title }}</h2>
@@ -89,7 +89,7 @@
             endif;
           @endphp
         </div>
-        <a href="#" class="button">Learn more about the distillery</a>
+        <a href="/about" class="button">Learn more about the distillery</a>
       </section>
   @endwhile
 @endsection

@@ -8,6 +8,8 @@
   $distillery_title = get_field('distillery_title');  
   $distillery_content = get_field('distillery_content');    
 
+  $gallery_bg = get_field('gallery_image');    
+
 @endphp
 
 @extends('layouts.app')
@@ -56,16 +58,11 @@
     <section class="gallery row">
         <div class="col-md-5 feature">
           <h2>Visit us!</h2>
-          <p>Come visit us, we’re open for sales and tours!</p>
-          <a href="" class="button">Get Directions</a>
+          <p><em><strong>visit us, we’re open for sales and tours!</strong></em></p>
+          <a href="https://goo.gl/maps/hcQj7gJSrMq" class="button" target="_blank">Get Directions</a>
         </div>
-        <div class="col-md-7">
-          <div class="row">
-            <div class="col-6 image"><a href=""></a></div>
-            <div class="col-6 image"><a href=""></a></div>
-            <div class="col-6 image"><a href=""></a></div>
-            <div class="col-6 image"><a href=""></a></div>
-          </div>
+        <div class="col-md-7 image" style="background-image: url('{{ $gallery_bg }}'); ">
+          
         </div>
     </section>
 

@@ -2,7 +2,7 @@
   $footer_background = get_field('footer_background', 'option');
 @endphp
 <section class="cta container-fluid">
-  <a href="">
+  <a href="https://goo.gl/maps/hcQj7gJSrMq" target="_blank">
     <h5>Come visit us in Sundre, Alberta! <span>Click here for directions.</span></h5>  
   </a>
 </section>
@@ -31,9 +31,9 @@
       endif; ?>
       @php dynamic_sidebar('sidebar-footer') @endphp
       <div class="nav col-sm-12">
-        <a class="button" href="">Home / Product</a>
-        <a class="button" href="">The Distillery</a>
-        <a class="button" href="">Location / Contact</a>
+        <a class="button" href="https://www.greenwooddistillers.ca">Home / Product</a>
+        <a class="button" href="/about">The Distillery</a>
+        <a class="button" href="mailto:info@greenwooddistillers.ca">Location / Contact</a>
       </div>
     </div>
   </div>

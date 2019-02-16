@@ -1,6 +1,6 @@
 .main {
   position: relative;
-  padding: 3rem 0 3.25rem 0;
+  padding: 3rem 0 0 0;
   text-align: left;
 
   h2 {
@@ -180,25 +180,29 @@ section.carousel-fade {
 
 //Gallery
 .gallery {
+  margin-top: -10rem;
+  -webkit-clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+
   .feature {
-    padding: 6rem 0;
+    padding: 8rem 0;
     background: $charcoal;
     text-align: center;
-    height: 66vw;
-  }
-  // .row > div:nth-child(2),
-  // .row > div:nth-child(3),
-  // .row > div:nth-child(4),
-  // .row > div:nth-child(5) {
-  //   width: 30%;
-  //   background: $light-grey;
-  //   height: 33vw;
-  // }
+    height: 600px;
 
-  .image a {
-    background: $light-grey;
-    height: 33vw;
-    margin: 5px;
+    h2 {
+      color: $white;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 4rem;
+    }
+  }
+
+  .image {
+    background-size: cover;
+    background-position: center center;
     display: flex;
   }
 }
