@@ -40,7 +40,6 @@
 }
 
 body {
-  background: #222720;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -75,6 +74,13 @@ h2 {
 h4 {
   font-family: Pitch-Bold, Arial, Helvetica, sans-serif;
   font-size: 17px;
+}
+
+h5 {
+  font-family: Pitch-Bold, Arial, Helvetica, sans-serif;
+  color: $charcoal-light;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 p {
