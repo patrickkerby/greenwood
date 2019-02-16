@@ -15380,7 +15380,7 @@ strong em {
   position: absolute;
   top: 40px;
   left: 40px;
-  width: 250px;
+  max-width: 250px;
 }
 
 /* line 33, resources/assets/styles/layouts/_header.scss */
