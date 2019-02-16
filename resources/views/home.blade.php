@@ -10,6 +10,8 @@
   $product_button = get_field('product_button');
   $product_image = get_field('product_image');
 
+  $image_first_slide = get_field('image_first_slide'); 
+
 @endphp
 
 @extends('layouts.app')
@@ -35,5 +37,38 @@
           <?php endif; ?>
       </div>
     </div>
+
+    <section id="carouselFade" class="carousel carousel-fade slide row" data-ride="carousel">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="frame-top">  
+        <polygon points="0,100 0,0 100,0 90,100" />
+      </svg>
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="frame-bottom">  
+        <polygon points="0,100 10,0 100,0 100,100" />
+      </svg>
+      <div class="carousel-inner">  
+          <div class="carousel-item active" style="background-image: url('{{ $image_first_slide }}');"></div>
+
+          @php if( have_rows('image_slider') ):
+            while ( have_rows('image_slider') ) : the_row(); 
+            $image_slide = get_sub_field('image_slider'); 
+          @endphp
+          
+          <div class="carousel-item" style="background-image: url('{{ $image_slide }}');"></div>
+          
+          @php endwhile;
+            else :
+              // no rows found
+            endif;
+          @endphp
+          <a class="carousel-control-prev" href="#carouselFade" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselFade" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+      </section>
   @endwhile
 @endsection

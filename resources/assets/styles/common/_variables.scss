@@ -16,3 +16,7 @@ $light-grey: #f6f6f6;
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
+
+/** Slick Carousel items **/
+$slick-loader-path: '~slick-carousel/slick/';
+$slick-font-path:   '#{$slick-loader-path}fonts/';

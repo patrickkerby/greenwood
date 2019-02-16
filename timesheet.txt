@@ -1,4 +1,8 @@
 Timing:
-  Phone call: 15 mins
-  Footer: 3 hrs
-  CTA: 45 mins
+  Phone call:                                       15 mins
+  Footer:                                     3hrs
+  CTA:                                              45 mins     -   4hrs
+  Flexbox and the header and CTA spacing:     1hr   45 mins     -   5:45
+  Wassail Product + Mobile Styles:            1hr   45 mins     -   7:30
+  Image Carousel:                             1hr               -   8:30
+  Carousel SVG frame                                45 mins     -   9:15
