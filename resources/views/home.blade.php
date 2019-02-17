@@ -14,7 +14,7 @@
 
   $stockist_title = get_field('stockist_title');
   $stockist_subtitle = get_field('stockists_subtitle');
-  $stockist_cta = get_field('stockists_cta');
+  $stockists_cta = get_field('stockists_cta');
 
 @endphp
 
