@@ -126,3 +126,16 @@ strong em {
   font-family: Pitch-Bold-Italic, serif;
   font-weight: normal;
 }
+
+//Hamburger Nav
+.nav-mobile {
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+}
+
+body.is-active {
+  position: fixed;
+}

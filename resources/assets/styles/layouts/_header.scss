@@ -19,6 +19,10 @@
       color: $white;
       line-height: 60px;
       margin-bottom: 2rem;
+
+      @include media-breakpoint-down(md) {
+        font-size: 48px;
+      }
     }
   }
 
@@ -50,7 +54,7 @@
 
     h2 {
       width: 75%;
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 }
@@ -60,7 +64,11 @@ nav.nav-primary {
   top: 25px;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+
+  ul {
+    justify-content: flex-end;
+    margin-right: 2rem;
+  }
 
   ul li a {
     color: $white;
@@ -77,7 +85,7 @@ nav.nav-primary {
   }
 }
 
-.home nav.nav-primary {
+.home nav.nav-primary ul {
   justify-content: center;
 }
 
@@ -88,9 +96,10 @@ nav.nav-primary {
 .banner .nav a {
   @extend .nav-link;
 
-  padding: 2rem;
+  padding: 1.5rem 1rem;
   font-family: $bold;
   transition: color 0.4s ease;
+  letter-spacing: -0.05em;
 
   &:hover {
     color: $bronze-light;
@@ -98,7 +107,7 @@ nav.nav-primary {
   }
 
   @include media-breakpoint-down(sm) {
-    padding: 1rem;
+    padding: 1rem 0.5rem;
   }
 }
 
@@ -126,5 +135,57 @@ img.doodle {
 
   @include media-breakpoint-down(md) {
     top: 80vh;
+  }
+}
+
+//Hamburger
+.hamburger {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  z-index: 10;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after,
+.hamburger-inner:focus {
+  background-color: $white;
+  outline: none;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+//Mobile Nav
+.nav-mobile {
+  background: $bronze-medium;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+
+  ul.nav {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+
+    li.menu-item {
+      margin: 0;
+
+      a {
+        @extend h2;
+
+        font-family: $bold;
+        font-size: 20px;
+        color: $white;
+        margin: 0;
+        padding: 15px;
+      }
+    }
   }
 }
