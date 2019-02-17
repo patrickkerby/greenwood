@@ -6844,18 +6844,13 @@ Router.prototype.loadEvents = function loadEvents () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony default export */ __webpack_exports__["a"] = ({
+/* harmony default export */ __webpack_exports__["a"] = ({
   init: function init() {
     // JavaScript to be fired on the about us page
-    $(document).ready(function(){
-      $('.gallery').slickLightbox({
-        itemSelector: '> div > a',
-      });
-    });
+    
   },
 });
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
 /* 14 */
