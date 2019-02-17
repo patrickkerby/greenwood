@@ -53,6 +53,10 @@ section.carousel-fade {
       background-position: center center;
       background-size: cover;
     }
+
+    @include media-breakpoint-down(md) {
+      height: 500px;
+    }
   }
 
   svg {

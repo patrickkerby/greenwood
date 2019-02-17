@@ -96,7 +96,7 @@
             $link_title = $stockists_cta['title'];
             $link_target = $stockists_cta['target'] ? $stockists_cta['target'] : '_self';
         @endphp
-            <a class="button" href="@php echo esc_url($link_url); @endphp" target="@php echo esc_attr($link_target); @endphp"><@php echo esc_html($link_title); @endphp</a>
+            <a class="button" href="@php echo esc_url($link_url); @endphp" target="@php echo esc_attr($link_target); @endphp">@php echo esc_html($link_title); @endphp</a>
         @php endif;   
         @endphp
       </section>

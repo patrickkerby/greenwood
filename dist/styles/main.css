@@ -15397,14 +15397,22 @@ strong em {
   position: static;
 }
 
+@media (max-width: 991.98px) {
+  /* line 33, resources/assets/styles/layouts/_header.scss */
+
+  .home .banner {
+    height: 95vh;
+  }
+}
+
 @media (max-width: 640px) {
-  /* line 44, resources/assets/styles/layouts/_header.scss */
+  /* line 48, resources/assets/styles/layouts/_header.scss */
 
   .banner {
     min-height: 400px;
   }
 
-  /* line 47, resources/assets/styles/layouts/_header.scss */
+  /* line 51, resources/assets/styles/layouts/_header.scss */
 
   .banner h2 {
     width: 75%;
@@ -15412,7 +15420,7 @@ strong em {
   }
 }
 
-/* line 54, resources/assets/styles/layouts/_header.scss */
+/* line 58, resources/assets/styles/layouts/_header.scss */
 
 nav.nav-primary {
   position: absolute;
@@ -15426,13 +15434,30 @@ nav.nav-primary {
           justify-content: flex-end;
 }
 
-/* line 61, resources/assets/styles/layouts/_header.scss */
+/* line 65, resources/assets/styles/layouts/_header.scss */
 
 nav.nav-primary ul li a {
   color: #fff;
 }
 
-/* line 66, resources/assets/styles/layouts/_header.scss */
+@media (max-width: 767.98px) {
+  /* line 70, resources/assets/styles/layouts/_header.scss */
+
+  nav.nav-primary ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  /* line 73, resources/assets/styles/layouts/_header.scss */
+
+  nav.nav-primary ul li {
+    margin: 0;
+  }
+}
+
+/* line 80, resources/assets/styles/layouts/_header.scss */
 
 .home nav.nav-primary {
   -webkit-box-pack: center;
@@ -15440,7 +15465,7 @@ nav.nav-primary ul li a {
           justify-content: center;
 }
 
-/* line 74, resources/assets/styles/layouts/_header.scss */
+/* line 88, resources/assets/styles/layouts/_header.scss */
 
 .banner .nav a {
   padding: 2rem;
@@ -15450,7 +15475,7 @@ nav.nav-primary ul li a {
   transition: color 0.4s ease;
 }
 
-/* line 81, resources/assets/styles/layouts/_header.scss */
+/* line 95, resources/assets/styles/layouts/_header.scss */
 
 .banner .nav a:hover {
   color: #c2967b;
@@ -15459,7 +15484,15 @@ nav.nav-primary ul li a {
   transition: color 0.4s ease;
 }
 
-/* line 87, resources/assets/styles/layouts/_header.scss */
+@media (max-width: 767.98px) {
+  /* line 88, resources/assets/styles/layouts/_header.scss */
+
+  .banner .nav a {
+    padding: 1rem;
+  }
+}
+
+/* line 105, resources/assets/styles/layouts/_header.scss */
 
 .intro-bar {
   background: #222720;
@@ -15469,7 +15502,7 @@ nav.nav-primary ul li a {
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 90%);
 }
 
-/* line 94, resources/assets/styles/layouts/_header.scss */
+/* line 112, resources/assets/styles/layouts/_header.scss */
 
 .intro-bar h3 {
   font-family: Pitch-Medium, serif;
@@ -15477,14 +15510,23 @@ nav.nav-primary ul li a {
   font-size: 22px;
   letter-spacing: -0.05em;
   color: #fff;
+  margin: 0 3rem;
 }
 
-/* line 103, resources/assets/styles/layouts/_header.scss */
+/* line 122, resources/assets/styles/layouts/_header.scss */
 
 img.doodle {
   position: absolute;
   top: 69vh;
   z-index: 1;
+}
+
+@media (max-width: 991.98px) {
+  /* line 122, resources/assets/styles/layouts/_header.scss */
+
+  img.doodle {
+    top: 80vh;
+  }
 }
 
 /* line 1, resources/assets/styles/layouts/_footer.scss */
@@ -15643,7 +15685,15 @@ section.carousel-fade .carousel-inner .carousel-item {
   background-size: cover;
 }
 
-/* line 58, resources/assets/styles/layouts/_pages.scss */
+@media (max-width: 991.98px) {
+  /* line 47, resources/assets/styles/layouts/_pages.scss */
+
+  section.carousel-fade .carousel-inner {
+    height: 500px;
+  }
+}
+
+/* line 62, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade svg {
   width: 100%;
@@ -15652,32 +15702,32 @@ section.carousel-fade svg {
   z-index: 5;
 }
 
-/* line 64, resources/assets/styles/layouts/_pages.scss */
+/* line 68, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade svg polygon {
   fill: #fff;
 }
 
-/* line 69, resources/assets/styles/layouts/_pages.scss */
+/* line 73, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade .frame-top {
   top: 0;
 }
 
-/* line 73, resources/assets/styles/layouts/_pages.scss */
+/* line 77, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade .frame-bottom {
   bottom: 0;
 }
 
-/* line 78, resources/assets/styles/layouts/_pages.scss */
+/* line 82, resources/assets/styles/layouts/_pages.scss */
 
 .stockists {
   text-align: center;
   padding: 3rem 0 2rem 0;
 }
 
-/* line 82, resources/assets/styles/layouts/_pages.scss */
+/* line 86, resources/assets/styles/layouts/_pages.scss */
 
 .stockists .info {
   margin-top: 2rem;
@@ -15685,13 +15735,13 @@ section.carousel-fade .frame-bottom {
   line-height: 1;
 }
 
-/* line 87, resources/assets/styles/layouts/_pages.scss */
+/* line 91, resources/assets/styles/layouts/_pages.scss */
 
 .stockists .info p {
   color: #222720;
 }
 
-/* line 91, resources/assets/styles/layouts/_pages.scss */
+/* line 95, resources/assets/styles/layouts/_pages.scss */
 
 .stockists .info svg {
   width: 10px;
@@ -15699,20 +15749,20 @@ section.carousel-fade .frame-bottom {
   margin: 1.5rem 0;
 }
 
-/* line 96, resources/assets/styles/layouts/_pages.scss */
+/* line 100, resources/assets/styles/layouts/_pages.scss */
 
 .stockists .info svg polygon {
   fill: #98694c;
 }
 
-/* line 102, resources/assets/styles/layouts/_pages.scss */
+/* line 106, resources/assets/styles/layouts/_pages.scss */
 
 .stockists .info:nth-last-child(-n+3) svg {
   display: none;
 }
 
 @media (max-width: 991.98px) {
-  /* line 108, resources/assets/styles/layouts/_pages.scss */
+  /* line 112, resources/assets/styles/layouts/_pages.scss */
 
   .stockists .info svg {
     display: -webkit-inline-box;
@@ -15720,14 +15770,14 @@ section.carousel-fade .frame-bottom {
     display: inline-flex;
   }
 
-  /* line 113, resources/assets/styles/layouts/_pages.scss */
+  /* line 117, resources/assets/styles/layouts/_pages.scss */
 
   .stockists .info:nth-last-child(-n+1) svg {
     display: none;
   }
 }
 
-/* line 120, resources/assets/styles/layouts/_pages.scss */
+/* line 124, resources/assets/styles/layouts/_pages.scss */
 
 .stockists .button {
   margin-top: 3rem;
@@ -15736,19 +15786,19 @@ section.carousel-fade .frame-bottom {
   display: inline-flex;
 }
 
-/* line 127, resources/assets/styles/layouts/_pages.scss */
+/* line 131, resources/assets/styles/layouts/_pages.scss */
 
 .team {
   text-align: center;
 }
 
-/* line 130, resources/assets/styles/layouts/_pages.scss */
+/* line 134, resources/assets/styles/layouts/_pages.scss */
 
 .team .member {
   padding: 2rem;
 }
 
-/* line 133, resources/assets/styles/layouts/_pages.scss */
+/* line 137, resources/assets/styles/layouts/_pages.scss */
 
 .team .member h4 {
   color: #98694c;
@@ -15756,25 +15806,25 @@ section.carousel-fade .frame-bottom {
   font-family: Pitch-Bold, Arial, Helvetica, sans-serif;
 }
 
-/* line 139, resources/assets/styles/layouts/_pages.scss */
+/* line 143, resources/assets/styles/layouts/_pages.scss */
 
 .team .member:nth-child(odd) {
   border-right: solid 3px #f6f6f6;
 }
 
-/* line 144, resources/assets/styles/layouts/_pages.scss */
+/* line 148, resources/assets/styles/layouts/_pages.scss */
 
 .team div.member:nth-child(-n+2) {
   border-bottom: solid 3px #f6f6f6;
 }
 
-/* line 148, resources/assets/styles/layouts/_pages.scss */
+/* line 152, resources/assets/styles/layouts/_pages.scss */
 
 .team img {
   max-width: 80%;
 }
 
-/* line 153, resources/assets/styles/layouts/_pages.scss */
+/* line 157, resources/assets/styles/layouts/_pages.scss */
 
 .distillery {
   text-align: center;
@@ -15785,34 +15835,34 @@ section.carousel-fade .frame-bottom {
   clip-path: polygon(0 7%, 100% 0, 100% 91%, 0% 100%);
 }
 
-/* line 161, resources/assets/styles/layouts/_pages.scss */
+/* line 165, resources/assets/styles/layouts/_pages.scss */
 
 .distillery h2 {
   color: #98694c;
   margin-bottom: 2.5rem;
 }
 
-/* line 166, resources/assets/styles/layouts/_pages.scss */
+/* line 170, resources/assets/styles/layouts/_pages.scss */
 
 .distillery .content {
   padding: 0 2rem;
 }
 
-/* line 169, resources/assets/styles/layouts/_pages.scss */
+/* line 173, resources/assets/styles/layouts/_pages.scss */
 
 .distillery .content p {
   color: #222720;
   font-size: 1.1rem;
 }
 
-/* line 174, resources/assets/styles/layouts/_pages.scss */
+/* line 178, resources/assets/styles/layouts/_pages.scss */
 
 .distillery .content img {
   margin: 4rem auto;
   max-width: 80%;
 }
 
-/* line 182, resources/assets/styles/layouts/_pages.scss */
+/* line 186, resources/assets/styles/layouts/_pages.scss */
 
 .gallery {
   margin-top: -10rem;
@@ -15820,7 +15870,7 @@ section.carousel-fade .frame-bottom {
   clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
 }
 
-/* line 187, resources/assets/styles/layouts/_pages.scss */
+/* line 191, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .feature {
   padding: 8rem 0;
@@ -15829,20 +15879,20 @@ section.carousel-fade .frame-bottom {
   height: 600px;
 }
 
-/* line 193, resources/assets/styles/layouts/_pages.scss */
+/* line 197, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .feature h2 {
   color: #fff;
 }
 
-/* line 197, resources/assets/styles/layouts/_pages.scss */
+/* line 201, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .feature p {
   font-size: 18px;
   margin: 4rem;
 }
 
-/* line 203, resources/assets/styles/layouts/_pages.scss */
+/* line 207, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .image {
   background-size: cover;

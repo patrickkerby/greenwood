@@ -38,6 +38,10 @@
     margin-bottom: 2rem;
     position: static;
   }
+
+  @include media-breakpoint-down(md) {
+    height: 95vh;
+  }
 }
 
 @media (max-width: 640px) {
@@ -61,6 +65,16 @@ nav.nav-primary {
   ul li a {
     color: $white;
   }
+
+  @include media-breakpoint-down(sm) {
+    ul {
+      flex-direction: column;
+
+      li {
+        margin: 0;
+      }
+    }
+  }
 }
 
 .home nav.nav-primary {
@@ -82,6 +96,10 @@ nav.nav-primary {
     color: $bronze-light;
     transition: color 0.4s ease;
   }
+
+  @include media-breakpoint-down(sm) {
+    padding: 1rem;
+  }
 }
 
 .intro-bar {
@@ -97,6 +115,7 @@ nav.nav-primary {
     font-size: 22px;
     letter-spacing: -0.05em;
     color: $white;
+    margin: 0 3rem;
   }
 }
 
@@ -104,4 +123,8 @@ img.doodle {
   position: absolute;
   top: 69vh;
   z-index: 1;
+
+  @include media-breakpoint-down(md) {
+    top: 80vh;
+  }
 }
