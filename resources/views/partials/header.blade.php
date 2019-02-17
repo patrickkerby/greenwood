@@ -25,7 +25,6 @@
     </div>
   </header>
   @if ( $intro_bar )
-  @endphp
   <img class="doodle" src="@asset('images/sketchBottle.svg')" alt="Greenwood Bottle Sketch" />
   <section class="intro-bar container-fluid angle--bottom-right">
     <div class="row no-gutters justify-content-center">
