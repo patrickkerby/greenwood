@@ -14,6 +14,7 @@
 
   $stockist_title = get_field('stockist_title');
   $stockist_subtitle = get_field('stockists_subtitle');
+  $stockist_cta = get_field('stockists_cta');
 
 @endphp
 
@@ -89,7 +90,15 @@
             endif;
           @endphp
         </div>
-        <a href="/about" class="button">Learn more about the distillery</a>
+        @php
+         if( $stockists_cta ): 
+            $link_url = $stockists_cta['url'];
+            $link_title = $stockists_cta['title'];
+            $link_target = $stockists_cta['target'] ? $stockists_cta['target'] : '_self';
+        @endphp
+            <a class="button" href="@php echo esc_url($link_url); @endphp" target="@php echo esc_attr($link_target); @endphp"><@php echo esc_html($link_title); @endphp</a>
+        @php endif;   
+        @endphp
       </section>
   @endwhile
 @endsection
