@@ -31,9 +31,9 @@
       endif; ?>
       @php dynamic_sidebar('sidebar-footer') @endphp
       <div class="nav col-sm-12">
-        <a class="button" href="https://www.greenwooddistillers.ca">Home / Product</a>
-        <a class="button" href="">The Distillery</a>
-        <a class="button" href="mailto:info@greenwooddistillers.ca">Location / Contact</a>
+        @if (has_nav_menu('primary_navigation'))
+          {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
+        @endif
       </div>
     </div>
   </div>

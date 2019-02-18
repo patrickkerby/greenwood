@@ -18,16 +18,18 @@
 
 .product {
   background-repeat: no-repeat;
-  background-position: 110% center;
+  background-position: 110% 0;
   padding: 3rem 0 10rem 0;
 
   @include media-breakpoint-down(md) {
     background-size: 70%;
-    background-position: 120% center;
+    background-position: 120% 0;
+    padding: 0;
   }
 
   @include media-breakpoint-down(xs) {
     background: none !important;
+    padding: 0;
 
     img {
       width: 80%;

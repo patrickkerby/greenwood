@@ -28,9 +28,9 @@
 
   img {
     position: absolute;
-    top: 40px;
-    left: 40px;
-    max-width: 250px;
+    top: 1.5rem;
+    left: 1.5rem;
+    max-width: 200px;
   }
 }
 
@@ -51,17 +51,12 @@
 @media (max-width: 640px) {
   .banner {
     min-height: 400px;
-
-    h2 {
-      width: 75%;
-      font-size: 16px;
-    }
   }
 }
 
 nav.nav-primary {
   position: absolute;
-  top: 25px;
+  top: 1rem;
   width: 100%;
   display: flex;
 
@@ -87,6 +82,7 @@ nav.nav-primary {
 
 .home nav.nav-primary ul {
   justify-content: center;
+  margin: 0;
 }
 
 .banner .nav li {
@@ -141,8 +137,8 @@ img.doodle {
 //Hamburger
 .hamburger {
   position: absolute;
-  right: 2rem;
-  top: 2rem;
+  right: 1rem;
+  top: 1rem;
   z-index: 10;
 }
 

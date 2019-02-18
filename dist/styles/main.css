@@ -17168,14 +17168,17 @@ body.is-active {
 
 /* line 1, resources/assets/styles/components/_buttons.scss */
 
-.button {
+.button,
+footer .nav a {
   padding: 1rem 2rem;
   border: solid 3px #c2967b;
+  font-family: Pitch-Bold-Italic, Arial, Helvetica, sans-serif;
 }
 
-/* line 5, resources/assets/styles/components/_buttons.scss */
+/* line 6, resources/assets/styles/components/_buttons.scss */
 
-.button:hover {
+.button:hover,
+footer .nav a:hover {
   text-decoration: none;
   border: solid 3px #734224;
   color: #734224;
@@ -17347,9 +17350,9 @@ body.is-active {
 
 .banner img {
   position: absolute;
-  top: 40px;
-  left: 40px;
-  max-width: 250px;
+  top: 1.5rem;
+  left: 1.5rem;
+  max-width: 200px;
 }
 
 /* line 37, resources/assets/styles/layouts/_header.scss */
@@ -17380,29 +17383,20 @@ body.is-active {
   .banner {
     min-height: 400px;
   }
-
-  /* line 55, resources/assets/styles/layouts/_header.scss */
-
-  .banner h2,
-  .banner .nav-mobile ul.nav li.menu-item a,
-  .nav-mobile ul.nav li.menu-item .banner a {
-    width: 75%;
-    font-size: 16px;
-  }
 }
 
-/* line 62, resources/assets/styles/layouts/_header.scss */
+/* line 57, resources/assets/styles/layouts/_header.scss */
 
 nav.nav-primary {
   position: absolute;
-  top: 25px;
+  top: 1rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-/* line 68, resources/assets/styles/layouts/_header.scss */
+/* line 63, resources/assets/styles/layouts/_header.scss */
 
 nav.nav-primary ul {
   -webkit-box-pack: end;
@@ -17411,14 +17405,14 @@ nav.nav-primary ul {
   margin-right: 2rem;
 }
 
-/* line 73, resources/assets/styles/layouts/_header.scss */
+/* line 68, resources/assets/styles/layouts/_header.scss */
 
 nav.nav-primary ul li a {
   color: #fff;
 }
 
 @media (max-width: 767.98px) {
-  /* line 78, resources/assets/styles/layouts/_header.scss */
+  /* line 73, resources/assets/styles/layouts/_header.scss */
 
   nav.nav-primary ul {
     -webkit-box-orient: vertical;
@@ -17427,22 +17421,23 @@ nav.nav-primary ul li a {
             flex-direction: column;
   }
 
-  /* line 81, resources/assets/styles/layouts/_header.scss */
+  /* line 76, resources/assets/styles/layouts/_header.scss */
 
   nav.nav-primary ul li {
     margin: 0;
   }
 }
 
-/* line 88, resources/assets/styles/layouts/_header.scss */
+/* line 83, resources/assets/styles/layouts/_header.scss */
 
 .home nav.nav-primary ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0;
 }
 
-/* line 96, resources/assets/styles/layouts/_header.scss */
+/* line 92, resources/assets/styles/layouts/_header.scss */
 
 .banner .nav a {
   padding: 1.5rem 1rem;
@@ -17453,7 +17448,7 @@ nav.nav-primary ul li a {
   letter-spacing: -0.05em;
 }
 
-/* line 104, resources/assets/styles/layouts/_header.scss */
+/* line 100, resources/assets/styles/layouts/_header.scss */
 
 .banner .nav a:hover {
   color: #c2967b;
@@ -17463,14 +17458,14 @@ nav.nav-primary ul li a {
 }
 
 @media (max-width: 767.98px) {
-  /* line 96, resources/assets/styles/layouts/_header.scss */
+  /* line 92, resources/assets/styles/layouts/_header.scss */
 
   .banner .nav a {
     padding: 1rem 0.5rem;
   }
 }
 
-/* line 114, resources/assets/styles/layouts/_header.scss */
+/* line 110, resources/assets/styles/layouts/_header.scss */
 
 .intro-bar {
   background: #222720;
@@ -17480,7 +17475,7 @@ nav.nav-primary ul li a {
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 90%);
 }
 
-/* line 121, resources/assets/styles/layouts/_header.scss */
+/* line 117, resources/assets/styles/layouts/_header.scss */
 
 .intro-bar h3 {
   font-family: Pitch-Medium, serif;
@@ -17491,7 +17486,7 @@ nav.nav-primary ul li a {
   margin: 0 3rem;
 }
 
-/* line 131, resources/assets/styles/layouts/_header.scss */
+/* line 127, resources/assets/styles/layouts/_header.scss */
 
 img.doodle {
   position: absolute;
@@ -17500,23 +17495,23 @@ img.doodle {
 }
 
 @media (max-width: 991.98px) {
-  /* line 131, resources/assets/styles/layouts/_header.scss */
+  /* line 127, resources/assets/styles/layouts/_header.scss */
 
   img.doodle {
     top: 80vh;
   }
 }
 
-/* line 142, resources/assets/styles/layouts/_header.scss */
+/* line 138, resources/assets/styles/layouts/_header.scss */
 
 .hamburger {
   position: absolute;
-  right: 2rem;
-  top: 2rem;
+  right: 1rem;
+  top: 1rem;
   z-index: 10;
 }
 
-/* line 149, resources/assets/styles/layouts/_header.scss */
+/* line 145, resources/assets/styles/layouts/_header.scss */
 
 .hamburger-inner,
 .hamburger-inner::before,
@@ -17526,13 +17521,13 @@ img.doodle {
   outline: none;
 }
 
-/* line 157, resources/assets/styles/layouts/_header.scss */
+/* line 153, resources/assets/styles/layouts/_header.scss */
 
 button:focus {
   outline: none !important;
 }
 
-/* line 162, resources/assets/styles/layouts/_header.scss */
+/* line 158, resources/assets/styles/layouts/_header.scss */
 
 .nav-mobile {
   background: #98694c;
@@ -17542,7 +17537,7 @@ button:focus {
   z-index: 5;
 }
 
-/* line 169, resources/assets/styles/layouts/_header.scss */
+/* line 165, resources/assets/styles/layouts/_header.scss */
 
 .nav-mobile ul.nav {
   display: -webkit-box;
@@ -17560,13 +17555,13 @@ button:focus {
           justify-content: space-evenly;
 }
 
-/* line 177, resources/assets/styles/layouts/_header.scss */
+/* line 173, resources/assets/styles/layouts/_header.scss */
 
 .nav-mobile ul.nav li.menu-item {
   margin: 0;
 }
 
-/* line 180, resources/assets/styles/layouts/_header.scss */
+/* line 176, resources/assets/styles/layouts/_header.scss */
 
 .nav-mobile ul.nav li.menu-item a {
   font-family: Pitch-Bold, Arial, Helvetica, sans-serif;
@@ -17640,6 +17635,15 @@ footer .nav {
 
 /* line 41, resources/assets/styles/layouts/_footer.scss */
 
+footer .nav li {
+  margin: 0 1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+/* line 46, resources/assets/styles/layouts/_footer.scss */
+
 footer .nav a {
   margin: 0.5rem;
 }
@@ -17674,7 +17678,7 @@ footer .nav a {
 
 .product {
   background-repeat: no-repeat;
-  background-position: 110% center;
+  background-position: 110% 0;
   padding: 3rem 0 10rem 0;
 }
 
@@ -17683,7 +17687,8 @@ footer .nav a {
 
   .product {
     background-size: 70%;
-    background-position: 120% center;
+    background-position: 120% 0;
+    padding: 0;
   }
 }
 
@@ -17692,9 +17697,10 @@ footer .nav a {
 
   .product {
     background: none !important;
+    padding: 0;
   }
 
-  /* line 32, resources/assets/styles/layouts/_pages.scss */
+  /* line 34, resources/assets/styles/layouts/_pages.scss */
 
   .product img {
     width: 80%;
@@ -17702,22 +17708,24 @@ footer .nav a {
   }
 }
 
-/* line 38, resources/assets/styles/layouts/_pages.scss */
+/* line 40, resources/assets/styles/layouts/_pages.scss */
 
-.product .button {
+.product .button,
+.product footer .nav a,
+footer .nav .product a {
   margin: 2rem 0 0 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-/* line 44, resources/assets/styles/layouts/_pages.scss */
+/* line 46, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade {
   background: #222720;
 }
 
-/* line 47, resources/assets/styles/layouts/_pages.scss */
+/* line 49, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade .carousel-inner {
   height: 800px;
@@ -17727,7 +17735,7 @@ section.carousel-fade .carousel-inner {
   display: flex;
 }
 
-/* line 52, resources/assets/styles/layouts/_pages.scss */
+/* line 54, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade .carousel-inner .carousel-item {
   background-position: center center;
@@ -17735,14 +17743,14 @@ section.carousel-fade .carousel-inner .carousel-item {
 }
 
 @media (max-width: 991.98px) {
-  /* line 47, resources/assets/styles/layouts/_pages.scss */
+  /* line 49, resources/assets/styles/layouts/_pages.scss */
 
   section.carousel-fade .carousel-inner {
     height: 500px;
   }
 }
 
-/* line 62, resources/assets/styles/layouts/_pages.scss */
+/* line 64, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade svg {
   width: 100%;
@@ -17751,32 +17759,32 @@ section.carousel-fade svg {
   z-index: 5;
 }
 
-/* line 68, resources/assets/styles/layouts/_pages.scss */
+/* line 70, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade svg polygon {
   fill: #fff;
 }
 
-/* line 73, resources/assets/styles/layouts/_pages.scss */
+/* line 75, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade .frame-top {
   top: 0;
 }
 
-/* line 77, resources/assets/styles/layouts/_pages.scss */
+/* line 79, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade .frame-bottom {
   bottom: 0;
 }
 
-/* line 82, resources/assets/styles/layouts/_pages.scss */
+/* line 84, resources/assets/styles/layouts/_pages.scss */
 
 .stockists {
   text-align: center;
   padding: 3rem 0 2rem 0;
 }
 
-/* line 86, resources/assets/styles/layouts/_pages.scss */
+/* line 88, resources/assets/styles/layouts/_pages.scss */
 
 .stockists .info {
   margin-top: 2rem;
@@ -17784,13 +17792,13 @@ section.carousel-fade .frame-bottom {
   line-height: 1;
 }
 
-/* line 91, resources/assets/styles/layouts/_pages.scss */
+/* line 93, resources/assets/styles/layouts/_pages.scss */
 
 .stockists .info p {
   color: #222720;
 }
 
-/* line 95, resources/assets/styles/layouts/_pages.scss */
+/* line 97, resources/assets/styles/layouts/_pages.scss */
 
 .stockists .info svg {
   width: 10px;
@@ -17798,20 +17806,20 @@ section.carousel-fade .frame-bottom {
   margin: 1.5rem 0;
 }
 
-/* line 100, resources/assets/styles/layouts/_pages.scss */
+/* line 102, resources/assets/styles/layouts/_pages.scss */
 
 .stockists .info svg polygon {
   fill: #98694c;
 }
 
-/* line 106, resources/assets/styles/layouts/_pages.scss */
+/* line 108, resources/assets/styles/layouts/_pages.scss */
 
 .stockists .info:nth-last-child(-n+3) svg {
   display: none;
 }
 
 @media (max-width: 991.98px) {
-  /* line 112, resources/assets/styles/layouts/_pages.scss */
+  /* line 114, resources/assets/styles/layouts/_pages.scss */
 
   .stockists .info svg {
     display: -webkit-inline-box;
@@ -17819,35 +17827,37 @@ section.carousel-fade .frame-bottom {
     display: inline-flex;
   }
 
-  /* line 117, resources/assets/styles/layouts/_pages.scss */
+  /* line 119, resources/assets/styles/layouts/_pages.scss */
 
   .stockists .info:nth-last-child(-n+1) svg {
     display: none;
   }
 }
 
-/* line 124, resources/assets/styles/layouts/_pages.scss */
+/* line 126, resources/assets/styles/layouts/_pages.scss */
 
-.stockists .button {
+.stockists .button,
+.stockists footer .nav a,
+footer .nav .stockists a {
   margin-top: 3rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-/* line 131, resources/assets/styles/layouts/_pages.scss */
+/* line 133, resources/assets/styles/layouts/_pages.scss */
 
 .team {
   text-align: center;
 }
 
-/* line 134, resources/assets/styles/layouts/_pages.scss */
+/* line 136, resources/assets/styles/layouts/_pages.scss */
 
 .team .member {
   padding: 2rem;
 }
 
-/* line 137, resources/assets/styles/layouts/_pages.scss */
+/* line 139, resources/assets/styles/layouts/_pages.scss */
 
 .team .member h4 {
   color: #98694c;
@@ -17855,25 +17865,25 @@ section.carousel-fade .frame-bottom {
   font-family: Pitch-Bold, Arial, Helvetica, sans-serif;
 }
 
-/* line 143, resources/assets/styles/layouts/_pages.scss */
+/* line 145, resources/assets/styles/layouts/_pages.scss */
 
 .team .member:nth-child(odd) {
   border-right: solid 3px #f6f6f6;
 }
 
-/* line 148, resources/assets/styles/layouts/_pages.scss */
+/* line 150, resources/assets/styles/layouts/_pages.scss */
 
 .team div.member:nth-child(-n+2) {
   border-bottom: solid 3px #f6f6f6;
 }
 
-/* line 152, resources/assets/styles/layouts/_pages.scss */
+/* line 154, resources/assets/styles/layouts/_pages.scss */
 
 .team img {
   max-width: 80%;
 }
 
-/* line 157, resources/assets/styles/layouts/_pages.scss */
+/* line 159, resources/assets/styles/layouts/_pages.scss */
 
 .distillery {
   text-align: center;
@@ -17884,7 +17894,7 @@ section.carousel-fade .frame-bottom {
   clip-path: polygon(0 7%, 100% 0, 100% 91%, 0% 100%);
 }
 
-/* line 165, resources/assets/styles/layouts/_pages.scss */
+/* line 167, resources/assets/styles/layouts/_pages.scss */
 
 .distillery h2,
 .distillery .nav-mobile ul.nav li.menu-item a,
@@ -17893,27 +17903,27 @@ section.carousel-fade .frame-bottom {
   margin-bottom: 2.5rem;
 }
 
-/* line 170, resources/assets/styles/layouts/_pages.scss */
+/* line 172, resources/assets/styles/layouts/_pages.scss */
 
 .distillery .content {
   padding: 0 2rem;
 }
 
-/* line 173, resources/assets/styles/layouts/_pages.scss */
+/* line 175, resources/assets/styles/layouts/_pages.scss */
 
 .distillery .content p {
   color: #222720;
   font-size: 1.1rem;
 }
 
-/* line 178, resources/assets/styles/layouts/_pages.scss */
+/* line 180, resources/assets/styles/layouts/_pages.scss */
 
 .distillery .content img {
   margin: 4rem auto;
   max-width: 80%;
 }
 
-/* line 186, resources/assets/styles/layouts/_pages.scss */
+/* line 188, resources/assets/styles/layouts/_pages.scss */
 
 .gallery {
   margin-top: -10rem;
@@ -17921,7 +17931,7 @@ section.carousel-fade .frame-bottom {
   clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
 }
 
-/* line 191, resources/assets/styles/layouts/_pages.scss */
+/* line 193, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .feature {
   padding: 8rem 0;
@@ -17930,7 +17940,7 @@ section.carousel-fade .frame-bottom {
   height: 600px;
 }
 
-/* line 197, resources/assets/styles/layouts/_pages.scss */
+/* line 199, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .feature h2,
 .gallery .feature .nav-mobile ul.nav li.menu-item a,
@@ -17938,14 +17948,14 @@ section.carousel-fade .frame-bottom {
   color: #fff;
 }
 
-/* line 201, resources/assets/styles/layouts/_pages.scss */
+/* line 203, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .feature p {
   font-size: 18px;
   margin: 4rem;
 }
 
-/* line 207, resources/assets/styles/layouts/_pages.scss */
+/* line 209, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .image {
   background-size: cover;

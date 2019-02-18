@@ -38,8 +38,15 @@ footer {
     justify-content: center;
     margin-bottom: 2rem;
 
+    li {
+      margin: 0 1rem;
+      display: inline-flex;
+    }
+
     a {
       margin: 0.5rem;
+
+      @extend .button;
     }
   }
 }

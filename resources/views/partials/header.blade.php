@@ -18,8 +18,8 @@
       {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
     @endif
   </nav>
-@php
-  if( $image ) { @endphp
+  <?php
+  if( $image ) { ?>
       <header class="banner row angle--bottom-left" style="background-image: linear-gradient(rgba(34,39,32,0.<?php echo $overlay; ?>), rgba(34,39,32,0.<?php echo $overlay; ?>)), url('<?php echo $image; ?>');">
     <?php }
     else { ?>
