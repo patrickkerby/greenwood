@@ -17972,7 +17972,7 @@ footer .nav .stockists a {
 
 .gallery .grid-item {
   background-size: cover;
-  background-position: center center;
+  background-position: center bottom;
   grid-column-end: span 2;
 }
 
