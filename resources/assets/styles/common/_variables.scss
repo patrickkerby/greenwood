@@ -26,3 +26,14 @@ $bold: Pitch-Bold, Arial, Helvetica, sans-serif;
 $italic: Pitch-Medium-Italic, Arial, Helvetica, sans-serif;
 
 $italic-bold: Pitch-Bold-Italic, Arial, Helvetica, sans-serif;
+
+/** Clip path angles **/
+@mixin angle-top() {
+  -webkit-clip-path: polygon(0 7.5rem, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 7.5rem, 100% 0, 100% 100%, 0% 100%);
+
+  @include media-breakpoint-down(sm) {
+    -webkit-clip-path: polygon(0 3.5rem, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 3.5rem, 100% 0, 100% 100%, 0% 100%);
+  }
+}

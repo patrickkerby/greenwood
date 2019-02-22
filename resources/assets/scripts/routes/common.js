@@ -9,5 +9,10 @@ export default {
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
+    $(document).ready(function(){
+      $('.grid-layout').slickLightbox({
+        itemSelector: '> div > a',
+      });
+    });
   },
 };

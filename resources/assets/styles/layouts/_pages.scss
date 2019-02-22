@@ -159,10 +159,10 @@ section.carousel-fade {
 .distillery {
   text-align: center;
   background: $light-grey;
-  padding: 8rem 0;
+  padding: 10rem 0 12rem 0;
   margin: 4rem 0;
-  -webkit-clip-path: polygon(0 7%, 100% 0, 100% 91%, 0% 100%);
-  clip-path: polygon(0 7%, 100% 0, 100% 91%, 0% 100%);
+
+  @include angle-top();
 
   h2 {
     color: $bronze-medium;
@@ -186,29 +186,81 @@ section.carousel-fade {
 
 //Gallery
 .gallery {
-  margin-top: -10rem;
-  -webkit-clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+  margin-top: -13rem;
 
-  .feature {
-    padding: 8rem 0;
-    background: $charcoal;
-    text-align: center;
-    height: 600px;
-
-    h2 {
-      color: $white;
-    }
-
-    p {
-      font-size: 18px;
-      margin: 4rem;
-    }
-  }
+  @include angle-top();
 
   .image {
     background-size: cover;
     background-position: center center;
+  }
+
+  .grid-layout {
+    display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-auto-flow: row dense;
+    grid-auto-rows: minmax(315px, auto);
+  }
+
+  .grid-item {
+    background-size: cover;
+    background-position: center center;
+    grid-column-end: span 2;
+
+    @include media-breakpoint-down(md) {
+      grid-column-end: span 3;
+    }
+
+    @include media-breakpoint-down(sm) {
+      grid-column-end: span 3;
+    }
+
+    @include media-breakpoint-down(xs) {
+      grid-column-end: span 6;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .feature {
+    grid-row-end: span 2;
+    background: $charcoal;
+    text-align: center;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      color: $white;
+      margin-top: 4rem;
+    }
+
+    p,
+    a {
+      font-size: 18px;
+      margin: 2rem 4rem 0 4rem;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .grid-item:nth-child(6n),
+  .grid-item:nth-child(7n) {
+    grid-column-end: span 3;
+    min-height: 460px;
+
+    @include media-breakpoint-down(sm) {
+      min-height: auto;
+    }
+  }
+
+  .grid-item:nth-child(8n) {
+    grid-column-end: span 6;
   }
 }

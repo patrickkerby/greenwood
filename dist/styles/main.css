@@ -7,6 +7,8 @@
 
 /** Slick Carousel items **/
 
+/** Clip path angles **/
+
 /** Import everything from autoload */
 
 /*!
@@ -17888,10 +17890,19 @@ footer .nav .stockists a {
 .distillery {
   text-align: center;
   background: #f6f6f6;
-  padding: 8rem 0;
+  padding: 10rem 0 12rem 0;
   margin: 4rem 0;
-  -webkit-clip-path: polygon(0 7%, 100% 0, 100% 91%, 0% 100%);
-  clip-path: polygon(0 7%, 100% 0, 100% 91%, 0% 100%);
+  -webkit-clip-path: polygon(0 7.5rem, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 7.5rem, 100% 0, 100% 100%, 0% 100%);
+}
+
+@media (max-width: 767.98px) {
+  /* line 159, resources/assets/styles/layouts/_pages.scss */
+
+  .distillery {
+    -webkit-clip-path: polygon(0 3.5rem, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 3.5rem, 100% 0, 100% 100%, 0% 100%);
+  }
 }
 
 /* line 167, resources/assets/styles/layouts/_pages.scss */
@@ -17926,43 +17937,135 @@ footer .nav .stockists a {
 /* line 188, resources/assets/styles/layouts/_pages.scss */
 
 .gallery {
-  margin-top: -10rem;
-  -webkit-clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+  margin-top: -13rem;
+  -webkit-clip-path: polygon(0 7.5rem, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 7.5rem, 100% 0, 100% 100%, 0% 100%);
+}
+
+@media (max-width: 767.98px) {
+  /* line 188, resources/assets/styles/layouts/_pages.scss */
+
+  .gallery {
+    -webkit-clip-path: polygon(0 3.5rem, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 3.5rem, 100% 0, 100% 100%, 0% 100%);
+  }
 }
 
 /* line 193, resources/assets/styles/layouts/_pages.scss */
 
-.gallery .feature {
-  padding: 8rem 0;
-  background: #222720;
-  text-align: center;
-  height: 600px;
+.gallery .image {
+  background-size: cover;
+  background-position: center center;
 }
 
-/* line 199, resources/assets/styles/layouts/_pages.scss */
+/* line 198, resources/assets/styles/layouts/_pages.scss */
+
+.gallery .grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-auto-flow: row dense;
+  grid-auto-rows: minmax(315px, auto);
+}
+
+/* line 207, resources/assets/styles/layouts/_pages.scss */
+
+.gallery .grid-item {
+  background-size: cover;
+  background-position: center center;
+  grid-column-end: span 2;
+}
+
+@media (max-width: 991.98px) {
+  /* line 207, resources/assets/styles/layouts/_pages.scss */
+
+  .gallery .grid-item {
+    grid-column-end: span 3;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 207, resources/assets/styles/layouts/_pages.scss */
+
+  .gallery .grid-item {
+    grid-column-end: span 3;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* line 207, resources/assets/styles/layouts/_pages.scss */
+
+  .gallery .grid-item {
+    grid-column-end: span 6;
+  }
+}
+
+/* line 224, resources/assets/styles/layouts/_pages.scss */
+
+.gallery .grid-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 231, resources/assets/styles/layouts/_pages.scss */
+
+.gallery .feature {
+  grid-row-end: span 2;
+  background: #222720;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 239, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .feature h2,
 .gallery .feature .nav-mobile ul.nav li.menu-item a,
 .nav-mobile ul.nav li.menu-item .gallery .feature a {
   color: #fff;
+  margin-top: 4rem;
 }
 
-/* line 203, resources/assets/styles/layouts/_pages.scss */
+/* line 244, resources/assets/styles/layouts/_pages.scss */
 
-.gallery .feature p {
+.gallery .feature p,
+.gallery .feature a {
   font-size: 18px;
-  margin: 4rem;
+  margin: 2rem 4rem 0 4rem;
+  width: auto;
+  height: auto;
 }
 
-/* line 209, resources/assets/styles/layouts/_pages.scss */
+/* line 253, resources/assets/styles/layouts/_pages.scss */
 
-.gallery .image {
-  background-size: cover;
-  background-position: center center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.gallery .grid-item:nth-child(6n),
+.gallery .grid-item:nth-child(7n) {
+  grid-column-end: span 3;
+  min-height: 460px;
+}
+
+@media (max-width: 767.98px) {
+  /* line 253, resources/assets/styles/layouts/_pages.scss */
+
+  .gallery .grid-item:nth-child(6n),
+  .gallery .grid-item:nth-child(7n) {
+    min-height: auto;
+  }
+}
+
+/* line 263, resources/assets/styles/layouts/_pages.scss */
+
+.gallery .grid-item:nth-child(8n) {
+  grid-column-end: span 6;
 }
 
 /* line 1, resources/assets/styles/layouts/_tinymce.scss */

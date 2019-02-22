@@ -56,14 +56,25 @@
       </div>
     </section>
     <section class="gallery row">
-        <div class="col-md-5 feature">
+      <div class="grid-layout col-md-12">
+        <div class="grid-item feature">
           <h2>Visit us!</h2>
           <p><em><strong>visit us, we’re open for sales and tours!</strong></em></p>
           <a href="https://goo.gl/maps/hcQj7gJSrMq" class="button" target="_blank">Get Directions</a>
         </div>
-        <div class="col-md-7 image" style="background-image: url('{{ $gallery_bg }}'); ">
+        @php 
+
+          $images = get_field('gallery');
           
-        </div>
+          if( $images ): @endphp
+                  @php foreach( $images as $image ): @endphp
+                      <div class="grid-item image" style="background-image: url('@php echo $image['sizes']['large']; @endphp');">
+                          <a href="@php echo $image['url']; @endphp" target="_blank"></a>
+                      </div>
+                  @php endforeach; @endphp
+          @php endif;		
+        @endphp
+      </div>  
     </section>
 
   @endwhile
