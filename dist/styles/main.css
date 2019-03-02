@@ -17241,9 +17241,54 @@ footer .nav a:hover {
   list-style: none;
 }
 
+/* line 1, resources/assets/styles/components/_forms.scss */
+
+input,
+textarea {
+  width: 100% !important;
+  border: solid 3px #f6f6f6;
+  background: #f6f6f6;
+  padding: 1rem !important;
+  outline: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 10, resources/assets/styles/components/_forms.scss */
+
+input:focus,
+textarea:focus {
+  background: none;
+  border: solid 3px #d6d6d6;
+}
+
+/* line 16, resources/assets/styles/components/_forms.scss */
+
+label {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* line 21, resources/assets/styles/components/_forms.scss */
+
+.gform_button {
+  background: none;
+  width: auto !important;
+  margin: 0 !important;
+  color: #98694c;
+}
+
+/* line 28, resources/assets/styles/components/_forms.scss */
+
+.gform_wrapper .gform_footer {
+  margin: 0;
+  padding: 0;
+}
+
 /** Search form */
 
-/* line 6, resources/assets/styles/components/_forms.scss */
+/* line 38, resources/assets/styles/components/_forms.scss */
 
 .search-form label {
   font-weight: normal;
@@ -18066,6 +18111,34 @@ footer .nav .stockists a {
 
 .gallery .grid-item:nth-child(8n) {
   grid-column-end: span 6;
+}
+
+/* line 269, resources/assets/styles/layouts/_pages.scss */
+
+.contact .row {
+  margin: 0 0 45px 0;
+}
+
+/* line 272, resources/assets/styles/layouts/_pages.scss */
+
+.contact .row p {
+  color: #222720;
+}
+
+/* line 276, resources/assets/styles/layouts/_pages.scss */
+
+.contact .row hr {
+  width: 20%;
+  border-width: 4px;
+  margin: 2rem 0 2rem 0;
+  border-color: #c2967b;
+}
+
+/* line 284, resources/assets/styles/layouts/_pages.scss */
+
+.contact .map {
+  height: 500px;
+  width: 100%;
 }
 
 /* line 1, resources/assets/styles/layouts/_tinymce.scss */
