@@ -51,14 +51,29 @@
     margin: 6rem 0 4rem 0;
     clip-path: none;
 
-    .grid-item:nth-child(6n),
-    .grid-item:nth-child(7n) {
+    .grid-item {
       grid-column-end: span 2;
-      min-height: auto;
+
+      @include media-breakpoint-down(md) {
+        grid-column-end: span 3;
+      }
 
       @include media-breakpoint-down(sm) {
-        grid-column-end: none;
+        grid-column-end: span 3;
       }
+
+      @include media-breakpoint-down(xs) {
+        grid-column-end: span 6;
+      }
+    }
+
+    .grid-item:nth-child(6n),
+    .grid-item:nth-child(7n) {
+      min-height: auto;
+    }
+
+    .grid-item:nth-child(8n) {
+      grid-column-end: span 3;
     }
   }
 }

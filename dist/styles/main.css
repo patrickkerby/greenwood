@@ -17316,22 +17316,48 @@ footer .nav a:hover {
 
 /* line 54, resources/assets/styles/components/_modals.scss */
 
-.main .modal .gallery .grid-item:nth-child(6n),
-.main .modal .gallery .grid-item:nth-child(7n) {
+.main .modal .gallery .grid-item {
   grid-column-end: span 2;
-  min-height: auto;
+}
+
+@media (max-width: 991.98px) {
+  /* line 54, resources/assets/styles/components/_modals.scss */
+
+  .main .modal .gallery .grid-item {
+    grid-column-end: span 3;
+  }
 }
 
 @media (max-width: 767.98px) {
   /* line 54, resources/assets/styles/components/_modals.scss */
 
-  .main .modal .gallery .grid-item:nth-child(6n),
-  .main .modal .gallery .grid-item:nth-child(7n) {
-    grid-column-end: none;
+  .main .modal .gallery .grid-item {
+    grid-column-end: span 3;
   }
 }
 
-/* line 67, resources/assets/styles/components/_modals.scss */
+@media (max-width: 575.98px) {
+  /* line 54, resources/assets/styles/components/_modals.scss */
+
+  .main .modal .gallery .grid-item {
+    grid-column-end: span 6;
+  }
+}
+
+/* line 70, resources/assets/styles/components/_modals.scss */
+
+.main .modal .gallery .grid-item:nth-child(6n),
+.main .modal .gallery .grid-item:nth-child(7n) {
+  min-height: auto;
+}
+
+/* line 75, resources/assets/styles/components/_modals.scss */
+
+.main .modal .gallery .grid-item:nth-child(8n) {
+  grid-column-end: span 3;
+}
+
+/* line 82, resources/assets/styles/components/_modals.scss */
 
 .main .products .modal p,
 .main .products .modal li,
@@ -17339,7 +17365,7 @@ footer .nav a:hover {
   color: #222720;
 }
 
-/* line 73, resources/assets/styles/components/_modals.scss */
+/* line 88, resources/assets/styles/components/_modals.scss */
 
 .main .products .modal button.close {
   color: #734224;
@@ -17348,7 +17374,7 @@ footer .nav a:hover {
   transition: all 0.4s ease-in-out;
 }
 
-/* line 77, resources/assets/styles/components/_modals.scss */
+/* line 92, resources/assets/styles/components/_modals.scss */
 
 .main .products .modal button.close:hover {
   color: #98694c;
@@ -17357,13 +17383,13 @@ footer .nav a:hover {
   transition: all 0.4s ease-in-out;
 }
 
-/* line 83, resources/assets/styles/components/_modals.scss */
+/* line 98, resources/assets/styles/components/_modals.scss */
 
 .main .products .modal .modal-dialog {
   max-width: 85%;
 }
 
-/* line 87, resources/assets/styles/components/_modals.scss */
+/* line 102, resources/assets/styles/components/_modals.scss */
 
 .main .products .modal .modal-content {
   background-color: #fff;

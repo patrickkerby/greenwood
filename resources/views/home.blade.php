@@ -71,7 +71,7 @@
                         </div>  
                       </section>
                       <div class="row justify-content-center">
-                        <img src="@asset('images/GreenwoodBadge.svg')" alt="Greenwood Distillers Logo" class="logo-badge col-4" />
+                        <img src="@asset('images/GreenwoodBadge.svg')" alt="Greenwood Distillers Logo" class="logo-badge col-sm-4" />
                       </div>
                     </div>
                   </div>
