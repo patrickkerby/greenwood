@@ -33,7 +33,9 @@
   }
 
   .modal-dialog {
-    max-width: 66%;
+    @include media-breakpoint-up(sm) {
+      max-width: 66%;
+    }
 
     .modal-content {
       background-color: $bronze-dark;
@@ -96,7 +98,9 @@
   }
 
   .modal-dialog {
-    max-width: 85%;
+    @include media-breakpoint-up(sm) {
+      max-width: 85%;
+    }
   }
 
   .modal-content {

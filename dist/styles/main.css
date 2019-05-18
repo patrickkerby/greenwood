@@ -17285,13 +17285,15 @@ footer .nav a:hover {
   transition: all 0.4s ease-in-out;
 }
 
-/* line 35, resources/assets/styles/components/_modals.scss */
+@media (min-width: 576px) {
+  /* line 35, resources/assets/styles/components/_modals.scss */
 
-.main .modal .modal-dialog {
-  max-width: 66%;
+  .main .modal .modal-dialog {
+    max-width: 66%;
+  }
 }
 
-/* line 38, resources/assets/styles/components/_modals.scss */
+/* line 40, resources/assets/styles/components/_modals.scss */
 
 .main .modal .modal-dialog .modal-content {
   background-color: #734224;
@@ -17300,13 +17302,13 @@ footer .nav a:hover {
   padding-bottom: 3rem;
 }
 
-/* line 44, resources/assets/styles/components/_modals.scss */
+/* line 46, resources/assets/styles/components/_modals.scss */
 
 .main .modal .modal-dialog .modal-content .modal-header {
   border: none;
 }
 
-/* line 50, resources/assets/styles/components/_modals.scss */
+/* line 52, resources/assets/styles/components/_modals.scss */
 
 .main .modal .gallery {
   margin: 6rem 0 4rem 0;
@@ -17314,14 +17316,14 @@ footer .nav a:hover {
           clip-path: none;
 }
 
-/* line 54, resources/assets/styles/components/_modals.scss */
+/* line 56, resources/assets/styles/components/_modals.scss */
 
 .main .modal .gallery .grid-item {
   grid-column-end: span 2;
 }
 
 @media (max-width: 991.98px) {
-  /* line 54, resources/assets/styles/components/_modals.scss */
+  /* line 56, resources/assets/styles/components/_modals.scss */
 
   .main .modal .gallery .grid-item {
     grid-column-end: span 3;
@@ -17329,7 +17331,7 @@ footer .nav a:hover {
 }
 
 @media (max-width: 767.98px) {
-  /* line 54, resources/assets/styles/components/_modals.scss */
+  /* line 56, resources/assets/styles/components/_modals.scss */
 
   .main .modal .gallery .grid-item {
     grid-column-end: span 3;
@@ -17337,27 +17339,27 @@ footer .nav a:hover {
 }
 
 @media (max-width: 575.98px) {
-  /* line 54, resources/assets/styles/components/_modals.scss */
+  /* line 56, resources/assets/styles/components/_modals.scss */
 
   .main .modal .gallery .grid-item {
     grid-column-end: span 6;
   }
 }
 
-/* line 70, resources/assets/styles/components/_modals.scss */
+/* line 72, resources/assets/styles/components/_modals.scss */
 
 .main .modal .gallery .grid-item:nth-child(6n),
 .main .modal .gallery .grid-item:nth-child(7n) {
   min-height: auto;
 }
 
-/* line 75, resources/assets/styles/components/_modals.scss */
+/* line 77, resources/assets/styles/components/_modals.scss */
 
 .main .modal .gallery .grid-item:nth-child(8n) {
   grid-column-end: span 3;
 }
 
-/* line 82, resources/assets/styles/components/_modals.scss */
+/* line 84, resources/assets/styles/components/_modals.scss */
 
 .main .products .modal p,
 .main .products .modal li,
@@ -17365,7 +17367,7 @@ footer .nav a:hover {
   color: #222720;
 }
 
-/* line 88, resources/assets/styles/components/_modals.scss */
+/* line 90, resources/assets/styles/components/_modals.scss */
 
 .main .products .modal button.close {
   color: #734224;
@@ -17374,7 +17376,7 @@ footer .nav a:hover {
   transition: all 0.4s ease-in-out;
 }
 
-/* line 92, resources/assets/styles/components/_modals.scss */
+/* line 94, resources/assets/styles/components/_modals.scss */
 
 .main .products .modal button.close:hover {
   color: #98694c;
@@ -17383,13 +17385,15 @@ footer .nav a:hover {
   transition: all 0.4s ease-in-out;
 }
 
-/* line 98, resources/assets/styles/components/_modals.scss */
+@media (min-width: 576px) {
+  /* line 100, resources/assets/styles/components/_modals.scss */
 
-.main .products .modal .modal-dialog {
-  max-width: 85%;
+  .main .products .modal .modal-dialog {
+    max-width: 85%;
+  }
 }
 
-/* line 102, resources/assets/styles/components/_modals.scss */
+/* line 106, resources/assets/styles/components/_modals.scss */
 
 .main .products .modal .modal-content {
   background-color: #fff;
