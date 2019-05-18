@@ -1,0 +1,90 @@
+.main .modal {
+  text-align: left;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    // color: $bronze-light;
+    margin: 0 0 2rem 0;
+  }
+
+  p,
+  li,
+  div {
+    color: #fff;
+    font-size: 20px;
+  }
+
+  button.close {
+    font-style: normal;
+    color: #fff;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+    text-shadow: none;
+    font-family: $bold;
+
+    &:hover {
+      color: $bronze-medium;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  .modal-dialog {
+    max-width: 66%;
+
+    .modal-content {
+      background-color: $bronze-dark;
+      border: none;
+      border-radius: 0;
+      padding-bottom: 3rem;
+
+      .modal-header {
+        border: none;
+      }
+    }
+  }
+
+  .gallery {
+    margin: 6rem 0 4rem 0;
+    clip-path: none;
+
+    .grid-item:nth-child(6n),
+    .grid-item:nth-child(7n) {
+      grid-column-end: span 2;
+      min-height: auto;
+
+      @include media-breakpoint-down(sm) {
+        grid-column-end: none;
+      }
+    }
+  }
+}
+
+.main .products .modal {
+  p,
+  li,
+  div {
+    color: $charcoal;
+  }
+
+  button.close {
+    color: $bronze-dark;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      color: $bronze-medium;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  .modal-dialog {
+    max-width: 85%;
+  }
+
+  .modal-content {
+    background-color: #fff;
+  }
+}

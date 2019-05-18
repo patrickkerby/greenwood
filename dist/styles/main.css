@@ -17235,6 +17235,140 @@ footer .nav a:hover {
   letter-spacing: -0.05em;
 }
 
+/* line 1, resources/assets/styles/components/_modals.scss */
+
+.main .modal {
+  text-align: left;
+}
+
+/* line 4, resources/assets/styles/components/_modals.scss */
+
+.main .modal h1,
+.main .modal h2,
+.main .modal .nav-mobile ul.nav li.menu-item a,
+.nav-mobile ul.nav li.menu-item .main .modal a,
+.main .modal h3,
+.main .modal h4,
+.main .modal h5,
+.main .modal h6 {
+  margin: 0 0 2rem 0;
+}
+
+/* line 14, resources/assets/styles/components/_modals.scss */
+
+.main .modal p,
+.main .modal li,
+.main .modal div {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* line 21, resources/assets/styles/components/_modals.scss */
+
+.main .modal button.close {
+  font-style: normal;
+  color: #fff;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  text-shadow: none;
+  font-family: Pitch-Bold, Arial, Helvetica, sans-serif;
+}
+
+/* line 29, resources/assets/styles/components/_modals.scss */
+
+.main .modal button.close:hover {
+  color: #98694c;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 35, resources/assets/styles/components/_modals.scss */
+
+.main .modal .modal-dialog {
+  max-width: 66%;
+}
+
+/* line 38, resources/assets/styles/components/_modals.scss */
+
+.main .modal .modal-dialog .modal-content {
+  background-color: #734224;
+  border: none;
+  border-radius: 0;
+  padding-bottom: 3rem;
+}
+
+/* line 44, resources/assets/styles/components/_modals.scss */
+
+.main .modal .modal-dialog .modal-content .modal-header {
+  border: none;
+}
+
+/* line 50, resources/assets/styles/components/_modals.scss */
+
+.main .modal .gallery {
+  margin: 6rem 0 4rem 0;
+  -webkit-clip-path: none;
+          clip-path: none;
+}
+
+/* line 54, resources/assets/styles/components/_modals.scss */
+
+.main .modal .gallery .grid-item:nth-child(6n),
+.main .modal .gallery .grid-item:nth-child(7n) {
+  grid-column-end: span 2;
+  min-height: auto;
+}
+
+@media (max-width: 767.98px) {
+  /* line 54, resources/assets/styles/components/_modals.scss */
+
+  .main .modal .gallery .grid-item:nth-child(6n),
+  .main .modal .gallery .grid-item:nth-child(7n) {
+    grid-column-end: none;
+  }
+}
+
+/* line 67, resources/assets/styles/components/_modals.scss */
+
+.main .products .modal p,
+.main .products .modal li,
+.main .products .modal div {
+  color: #222720;
+}
+
+/* line 73, resources/assets/styles/components/_modals.scss */
+
+.main .products .modal button.close {
+  color: #734224;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 77, resources/assets/styles/components/_modals.scss */
+
+.main .products .modal button.close:hover {
+  color: #98694c;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 83, resources/assets/styles/components/_modals.scss */
+
+.main .products .modal .modal-dialog {
+  max-width: 85%;
+}
+
+/* line 87, resources/assets/styles/components/_modals.scss */
+
+.main .products .modal .modal-content {
+  background-color: #fff;
+}
+
 /* line 5, resources/assets/styles/components/_comments.scss */
 
 .comment-list ol {
@@ -17713,7 +17847,17 @@ footer .nav a {
   font-size: 60px;
 }
 
-/* line 12, resources/assets/styles/layouts/_pages.scss */
+@media (max-width: 767.98px) {
+  /* line 6, resources/assets/styles/layouts/_pages.scss */
+
+  .main h2,
+  .main .nav-mobile ul.nav li.menu-item a,
+  .nav-mobile ul.nav li.menu-item .main a {
+    font-size: 50px;
+  }
+}
+
+/* line 16, resources/assets/styles/layouts/_pages.scss */
 
 .main h3 {
   font-size: 20px;
@@ -17721,58 +17865,74 @@ footer .nav a {
   line-height: 1;
 }
 
-/* line 19, resources/assets/styles/layouts/_pages.scss */
+/* line 23, resources/assets/styles/layouts/_pages.scss */
 
-.product {
-  background-repeat: no-repeat;
-  background-position: 110% 0;
-  padding: 3rem 0 10rem 0;
+.products {
+  margin: 3rem 0;
 }
 
-@media (max-width: 991.98px) {
-  /* line 19, resources/assets/styles/layouts/_pages.scss */
+/* line 26, resources/assets/styles/layouts/_pages.scss */
 
-  .product {
-    background-size: 70%;
-    background-position: 120% 0;
-    padding: 0;
-  }
+.products .product {
+  text-align: center;
+  z-index: 10;
+  padding: 0 2rem;
 }
 
-@media (max-width: 575.98px) {
-  /* line 19, resources/assets/styles/layouts/_pages.scss */
+/* line 31, resources/assets/styles/layouts/_pages.scss */
 
-  .product {
-    background: none !important;
-    padding: 0;
-  }
-
-  /* line 34, resources/assets/styles/layouts/_pages.scss */
-
-  .product img {
-    width: 80%;
-    margin: 0 0 3rem 0;
-  }
-}
-
-/* line 40, resources/assets/styles/layouts/_pages.scss */
-
-.product .button,
-.product footer .nav a,
-footer .nav .product a {
-  margin: 2rem 0 0 0;
+.products .product a.button,
+.products .product footer .nav a,
+footer .nav .products .product a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-/* line 46, resources/assets/styles/layouts/_pages.scss */
+@media (max-width: 767.98px) {
+  /* line 31, resources/assets/styles/layouts/_pages.scss */
+
+  .products .product a.button,
+  .products .product footer .nav a,
+  footer .nav .products .product a {
+    margin: 0 0 3rem 0;
+  }
+}
+
+/* line 39, resources/assets/styles/layouts/_pages.scss */
+
+.products .product img.thumb {
+  margin: 0 0 1rem 0;
+  max-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  /* line 39, resources/assets/styles/layouts/_pages.scss */
+
+  .products .product img.thumb {
+    margin: 3rem 0 0 0;
+  }
+}
+
+/* line 48, resources/assets/styles/layouts/_pages.scss */
+
+.products .product h3 {
+  margin: 0 0 2rem 0;
+}
+
+/* line 52, resources/assets/styles/layouts/_pages.scss */
+
+.products .product:nth-of-type(odd) {
+  border-right: solid 3px #f6f6f6;
+}
+
+/* line 58, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade {
   background: #222720;
 }
 
-/* line 49, resources/assets/styles/layouts/_pages.scss */
+/* line 61, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade .carousel-inner {
   height: 800px;
@@ -17782,7 +17942,7 @@ section.carousel-fade .carousel-inner {
   display: flex;
 }
 
-/* line 54, resources/assets/styles/layouts/_pages.scss */
+/* line 66, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade .carousel-inner .carousel-item {
   background-position: center center;
@@ -17790,14 +17950,14 @@ section.carousel-fade .carousel-inner .carousel-item {
 }
 
 @media (max-width: 991.98px) {
-  /* line 49, resources/assets/styles/layouts/_pages.scss */
+  /* line 61, resources/assets/styles/layouts/_pages.scss */
 
   section.carousel-fade .carousel-inner {
     height: 500px;
   }
 }
 
-/* line 64, resources/assets/styles/layouts/_pages.scss */
+/* line 76, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade svg {
   width: 100%;
@@ -17806,32 +17966,32 @@ section.carousel-fade svg {
   z-index: 5;
 }
 
-/* line 70, resources/assets/styles/layouts/_pages.scss */
+/* line 82, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade svg polygon {
   fill: #fff;
 }
 
-/* line 75, resources/assets/styles/layouts/_pages.scss */
+/* line 87, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade .frame-top {
   top: 0;
 }
 
-/* line 79, resources/assets/styles/layouts/_pages.scss */
+/* line 91, resources/assets/styles/layouts/_pages.scss */
 
 section.carousel-fade .frame-bottom {
   bottom: 0;
 }
 
-/* line 84, resources/assets/styles/layouts/_pages.scss */
+/* line 96, resources/assets/styles/layouts/_pages.scss */
 
 .stockists {
   text-align: center;
   padding: 3rem 0 2rem 0;
 }
 
-/* line 88, resources/assets/styles/layouts/_pages.scss */
+/* line 100, resources/assets/styles/layouts/_pages.scss */
 
 .stockists .info {
   margin-top: 2rem;
@@ -17839,13 +17999,13 @@ section.carousel-fade .frame-bottom {
   line-height: 1;
 }
 
-/* line 93, resources/assets/styles/layouts/_pages.scss */
+/* line 105, resources/assets/styles/layouts/_pages.scss */
 
 .stockists .info p {
   color: #222720;
 }
 
-/* line 97, resources/assets/styles/layouts/_pages.scss */
+/* line 109, resources/assets/styles/layouts/_pages.scss */
 
 .stockists .info svg {
   width: 10px;
@@ -17853,20 +18013,20 @@ section.carousel-fade .frame-bottom {
   margin: 1.5rem 0;
 }
 
-/* line 102, resources/assets/styles/layouts/_pages.scss */
+/* line 114, resources/assets/styles/layouts/_pages.scss */
 
 .stockists .info svg polygon {
   fill: #98694c;
 }
 
-/* line 108, resources/assets/styles/layouts/_pages.scss */
+/* line 120, resources/assets/styles/layouts/_pages.scss */
 
 .stockists .info:nth-last-child(-n+3) svg {
   display: none;
 }
 
 @media (max-width: 991.98px) {
-  /* line 114, resources/assets/styles/layouts/_pages.scss */
+  /* line 126, resources/assets/styles/layouts/_pages.scss */
 
   .stockists .info svg {
     display: -webkit-inline-box;
@@ -17874,14 +18034,14 @@ section.carousel-fade .frame-bottom {
     display: inline-flex;
   }
 
-  /* line 119, resources/assets/styles/layouts/_pages.scss */
+  /* line 131, resources/assets/styles/layouts/_pages.scss */
 
   .stockists .info:nth-last-child(-n+1) svg {
     display: none;
   }
 }
 
-/* line 126, resources/assets/styles/layouts/_pages.scss */
+/* line 138, resources/assets/styles/layouts/_pages.scss */
 
 .stockists .button,
 .stockists footer .nav a,
@@ -17892,45 +18052,60 @@ footer .nav .stockists a {
   display: inline-flex;
 }
 
-/* line 133, resources/assets/styles/layouts/_pages.scss */
+/* line 145, resources/assets/styles/layouts/_pages.scss */
 
 .team {
   text-align: center;
 }
 
-/* line 136, resources/assets/styles/layouts/_pages.scss */
+/* line 148, resources/assets/styles/layouts/_pages.scss */
 
 .team .member {
   padding: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-/* line 139, resources/assets/styles/layouts/_pages.scss */
+/* line 155, resources/assets/styles/layouts/_pages.scss */
 
 .team .member h4 {
   color: #98694c;
   font-size: 19px;
   font-family: Pitch-Bold, Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
-/* line 145, resources/assets/styles/layouts/_pages.scss */
+/* line 162, resources/assets/styles/layouts/_pages.scss */
 
-.team .member:nth-child(odd) {
+.team .member:nth-of-type(odd) {
   border-right: solid 3px #f6f6f6;
 }
 
-/* line 150, resources/assets/styles/layouts/_pages.scss */
+/* line 167, resources/assets/styles/layouts/_pages.scss */
 
-.team div.member:nth-child(-n+2) {
+.team div.member:nth-of-type(-n+2) {
   border-bottom: solid 3px #f6f6f6;
 }
 
-/* line 154, resources/assets/styles/layouts/_pages.scss */
+/* line 171, resources/assets/styles/layouts/_pages.scss */
 
 .team img {
   max-width: 80%;
+  margin-bottom: 2rem;
 }
 
-/* line 159, resources/assets/styles/layouts/_pages.scss */
+/* line 177, resources/assets/styles/layouts/_pages.scss */
 
 .distillery {
   text-align: center;
@@ -17942,7 +18117,7 @@ footer .nav .stockists a {
 }
 
 @media (max-width: 767.98px) {
-  /* line 159, resources/assets/styles/layouts/_pages.scss */
+  /* line 177, resources/assets/styles/layouts/_pages.scss */
 
   .distillery {
     -webkit-clip-path: polygon(0 3.5rem, 100% 0, 100% 100%, 0% 100%);
@@ -17950,7 +18125,7 @@ footer .nav .stockists a {
   }
 }
 
-/* line 167, resources/assets/styles/layouts/_pages.scss */
+/* line 185, resources/assets/styles/layouts/_pages.scss */
 
 .distillery h2,
 .distillery .nav-mobile ul.nav li.menu-item a,
@@ -17959,27 +18134,27 @@ footer .nav .stockists a {
   margin-bottom: 2.5rem;
 }
 
-/* line 172, resources/assets/styles/layouts/_pages.scss */
+/* line 190, resources/assets/styles/layouts/_pages.scss */
 
 .distillery .content {
   padding: 0 2rem;
 }
 
-/* line 175, resources/assets/styles/layouts/_pages.scss */
+/* line 193, resources/assets/styles/layouts/_pages.scss */
 
 .distillery .content p {
   color: #222720;
   font-size: 1.1rem;
 }
 
-/* line 180, resources/assets/styles/layouts/_pages.scss */
+/* line 198, resources/assets/styles/layouts/_pages.scss */
 
 .distillery .content img {
   margin: 4rem auto;
   max-width: 80%;
 }
 
-/* line 188, resources/assets/styles/layouts/_pages.scss */
+/* line 206, resources/assets/styles/layouts/_pages.scss */
 
 .gallery {
   margin-top: -13rem;
@@ -17988,7 +18163,7 @@ footer .nav .stockists a {
 }
 
 @media (max-width: 767.98px) {
-  /* line 188, resources/assets/styles/layouts/_pages.scss */
+  /* line 206, resources/assets/styles/layouts/_pages.scss */
 
   .gallery {
     -webkit-clip-path: polygon(0 3.5rem, 100% 0, 100% 100%, 0% 100%);
@@ -17996,14 +18171,14 @@ footer .nav .stockists a {
   }
 }
 
-/* line 193, resources/assets/styles/layouts/_pages.scss */
+/* line 211, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .image {
   background-size: cover;
   background-position: center center;
 }
 
-/* line 198, resources/assets/styles/layouts/_pages.scss */
+/* line 216, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .grid-layout {
   display: grid;
@@ -18013,7 +18188,7 @@ footer .nav .stockists a {
   grid-auto-rows: minmax(315px, auto);
 }
 
-/* line 207, resources/assets/styles/layouts/_pages.scss */
+/* line 225, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .grid-item {
   background-size: cover;
@@ -18022,7 +18197,7 @@ footer .nav .stockists a {
 }
 
 @media (max-width: 991.98px) {
-  /* line 207, resources/assets/styles/layouts/_pages.scss */
+  /* line 225, resources/assets/styles/layouts/_pages.scss */
 
   .gallery .grid-item {
     grid-column-end: span 3;
@@ -18030,7 +18205,7 @@ footer .nav .stockists a {
 }
 
 @media (max-width: 767.98px) {
-  /* line 207, resources/assets/styles/layouts/_pages.scss */
+  /* line 225, resources/assets/styles/layouts/_pages.scss */
 
   .gallery .grid-item {
     grid-column-end: span 3;
@@ -18038,14 +18213,14 @@ footer .nav .stockists a {
 }
 
 @media (max-width: 575.98px) {
-  /* line 207, resources/assets/styles/layouts/_pages.scss */
+  /* line 225, resources/assets/styles/layouts/_pages.scss */
 
   .gallery .grid-item {
     grid-column-end: span 6;
   }
 }
 
-/* line 224, resources/assets/styles/layouts/_pages.scss */
+/* line 242, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .grid-item a {
   display: block;
@@ -18053,7 +18228,7 @@ footer .nav .stockists a {
   height: 100%;
 }
 
-/* line 231, resources/assets/styles/layouts/_pages.scss */
+/* line 249, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .feature {
   grid-row-end: span 2;
@@ -18071,7 +18246,7 @@ footer .nav .stockists a {
           justify-content: center;
 }
 
-/* line 239, resources/assets/styles/layouts/_pages.scss */
+/* line 257, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .feature h2,
 .gallery .feature .nav-mobile ul.nav li.menu-item a,
@@ -18080,7 +18255,7 @@ footer .nav .stockists a {
   margin-top: 4rem;
 }
 
-/* line 244, resources/assets/styles/layouts/_pages.scss */
+/* line 262, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .feature p,
 .gallery .feature a {
@@ -18090,7 +18265,7 @@ footer .nav .stockists a {
   height: auto;
 }
 
-/* line 253, resources/assets/styles/layouts/_pages.scss */
+/* line 271, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .grid-item:nth-child(6n),
 .gallery .grid-item:nth-child(7n) {
@@ -18099,7 +18274,7 @@ footer .nav .stockists a {
 }
 
 @media (max-width: 767.98px) {
-  /* line 253, resources/assets/styles/layouts/_pages.scss */
+  /* line 271, resources/assets/styles/layouts/_pages.scss */
 
   .gallery .grid-item:nth-child(6n),
   .gallery .grid-item:nth-child(7n) {
@@ -18107,25 +18282,25 @@ footer .nav .stockists a {
   }
 }
 
-/* line 263, resources/assets/styles/layouts/_pages.scss */
+/* line 281, resources/assets/styles/layouts/_pages.scss */
 
 .gallery .grid-item:nth-child(8n) {
   grid-column-end: span 6;
 }
 
-/* line 269, resources/assets/styles/layouts/_pages.scss */
+/* line 287, resources/assets/styles/layouts/_pages.scss */
 
 .contact .row {
   margin: 0 0 45px 0;
 }
 
-/* line 272, resources/assets/styles/layouts/_pages.scss */
+/* line 290, resources/assets/styles/layouts/_pages.scss */
 
 .contact .row p {
   color: #222720;
 }
 
-/* line 276, resources/assets/styles/layouts/_pages.scss */
+/* line 294, resources/assets/styles/layouts/_pages.scss */
 
 .contact .row hr {
   width: 20%;
@@ -18134,7 +18309,7 @@ footer .nav .stockists a {
   border-color: #c2967b;
 }
 
-/* line 284, resources/assets/styles/layouts/_pages.scss */
+/* line 302, resources/assets/styles/layouts/_pages.scss */
 
 .contact .map {
   height: 500px;

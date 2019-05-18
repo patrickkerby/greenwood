@@ -22,10 +22,11 @@
       <div class="row justify-content-center">
         <h2 class="col-md-10">{{ $team_title }}</h2>
         <h3 class="col-md-10">{{ $team_subtitle }}</h3>
-        <div class="row">
+        <div class="row headshots">
       @php
       // check if the repeater field has rows of data
-      if( have_rows('team_member') ):      
+      if( have_rows('team_member') ):     
+        $count = 0;	 
          // loop through the rows of data
           while ( have_rows('team_member') ) : the_row();
       
@@ -34,12 +35,43 @@
               $headshot = get_sub_field('headshot');
 
             @endphp
+            @php if( get_sub_field('bio') ): @endphp
+              <div class="col-md-6 member">
+                <a href="#" data-toggle="modal" data-target="#exampleModalCenter-{{ $count }}">
+                  <img src="{{ $headshot }}" alt="{{ $name }}" />
+                  <h4>{{ $name }}</h4>
+                </a>
+                {{-- Bootstrap Modal --}}
+                <div class="bio modal {{ $name }} fade" id="exampleModalCenter-{{ $count }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">                 
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row justify-content-center">                            
+                            <div class="col-sm-10">@php the_sub_field('bio'); @endphp</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {{-- If no bio, show only the card --}}
+            @php else: @endphp            
               <div class="col-md-6 member">
                 <img src="{{ $headshot }}" alt="{{ $name }}" />
                 <h4>{{ $name }}</h4>
               </div>
+            @php endif;
             
-            @php endwhile;      
+						$count++; 
+            
+            endwhile;      
             else :      
                 // no rows found      
             endif;            

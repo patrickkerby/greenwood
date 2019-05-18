@@ -7,6 +7,10 @@
     font-family: millenniumregular, serif;
     text-transform: lowercase;
     font-size: 60px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 50px;
+    }
   }
 
   h3 {
@@ -16,30 +20,38 @@
   }
 }
 
-.product {
-  background-repeat: no-repeat;
-  background-position: 110% 0;
-  padding: 3rem 0 10rem 0;
+.products {
+  margin: 3rem 0;
 
-  @include media-breakpoint-down(md) {
-    background-size: 70%;
-    background-position: 120% 0;
-    padding: 0;
-  }
+  .product {
+    text-align: center;
+    z-index: 10;
+    padding: 0 2rem;
 
-  @include media-breakpoint-down(xs) {
-    background: none !important;
-    padding: 0;
+    a.button {
+      display: inline-flex;
 
-    img {
-      width: 80%;
-      margin: 0 0 3rem 0;
+      @include media-breakpoint-down(sm) {
+        margin: 0 0 3rem 0;
+      }
     }
-  }
 
-  .button {
-    margin: 2rem 0 0 0;
-    display: inline-flex;
+    img.thumb {
+      margin: 0 0 1rem 0;
+      max-width: 100%;
+
+      @include media-breakpoint-down(sm) {
+        margin: 3rem 0 0 0;
+      }
+    }
+
+    h3 {
+      margin: 0 0 2rem 0;
+    }
+
+    &:nth-of-type(odd) {
+      border-right: solid 3px $light-grey;
+    }
   }
 }
 
@@ -135,24 +147,30 @@ section.carousel-fade {
 
   .member {
     padding: 2rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     h4 {
       color: $bronze-medium;
       font-size: 19px;
       font-family: $bold;
+      margin: 0;
     }
 
-    &:nth-child(odd) {
+    &:nth-of-type(odd) {
       border-right: solid 3px $light-grey;
     }
   }
 
-  div.member:nth-child(-n+2) {
+  div.member:nth-of-type(-n+2) {
     border-bottom: solid 3px $light-grey;
   }
 
   img {
     max-width: 80%;
+    margin-bottom: 2rem;
   }
 }
 

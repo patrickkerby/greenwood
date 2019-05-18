@@ -4,12 +4,6 @@
 
 @php
 
-  $product_title = get_field('product_title');
-  $product_data = get_field('product_data');
-  $product_description = get_field('product_description');
-  $product_button = get_field('product_button');
-  $product_image = get_field('product_image');
-
   $image_first_slide = get_field('image_first_slide'); 
 
   $stockist_title = get_field('stockist_title');
@@ -23,23 +17,78 @@
   @while(have_posts()) @php the_post() @endphp
     @include('partials.content-page')
 
-    <div class="row product" style="background-image: url('{{ $product_image }}');">
-      <div class="d-block d-sm-none"><img src="{{ $product_image }}" alt="{{ $product_title }} Illustration" /></div>
-      <div class="col-sm-7 col-md-6 offset-sm-1">
-        <h2>{{ $product_title }}</h2>
-        <h3>{{ $product_data }}</h3>
-        <div>
-          @php echo $product_description; @endphp
-        </div>
-        <?php 
-          if( $product_button ): 
-            $link_url = $product_button['url'];
-            $link_title = $product_button['title'];
-            $link_target = $product_button['target'] ? $product_button['target'] : '_self';
-            ?>
-            <a class="button" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
-          <?php endif; ?>
-      </div>
+    <div class="row products">
+      
+      @php 
+        if( have_rows('products') ):     
+          
+          $count = 0;	 
+
+          while ( have_rows('products') ) : the_row();      
+
+            $thumb = get_sub_field('product_thumbnail');
+            $title = get_sub_field('product_title');
+            $subtitle = get_sub_field('product_subtitle');
+            $details = get_sub_field('product_details');
+            @endphp 
+
+            <div class="col-sm-6 justify-content-center product">
+              <img class="thumb" src="{{ $thumb }}" alt="{{ $title }}" />
+              <h2>{{ $title }}</h2>
+              <h3>{{ $subtitle }}</h3>
+              <a class="button" href="#" data-toggle="modal" data-target="#exampleModalCenter-{{ $count }}">Tell me more&hellip;</a>
+            </div>
+
+            {{-- Product Modal --}}
+            @php if( get_sub_field('product_details') ): @endphp
+            <div class="product_detail modal fade" id="exampleModalCenter-{{ $count }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">                 
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row justify-content-center">                            
+                        <div class="col-sm-8">@php the_sub_field('product_details'); @endphp</div>
+                      </div>
+                      {{-- Product specific gallery --}}
+                      <section class="gallery row">
+                        <div class="grid-layout col-md-12">
+                          @php 
+                            $images = get_sub_field('product_gallery');
+                            
+                            if( $images ): @endphp
+                                    @php foreach( $images as $image ): @endphp
+                                        <div class="grid-item image" style="background-image: url('@php echo $image['sizes']['large']; @endphp');">
+                                            <a href="@php echo $image['url']; @endphp" target="_blank"></a>
+                                        </div>
+                                    @php endforeach; @endphp
+                            @php endif;		
+                          @endphp
+                        </div>  
+                      </section>
+                      <div class="row justify-content-center">
+                        <img src="@asset('images/GreenwoodBadge.svg')" alt="Greenwood Distillers Logo" class="logo-badge col-4" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            @php else:         
+            // no results
+          endif; @endphp
+
+            @php
+              $count++; 
+                endwhile;      
+              else :      
+                // no rows found      
+              endif;            
+            @endphp
     </div>
 
     <section id="carouselFade" class="carousel carousel-fade slide row" data-ride="carousel">
