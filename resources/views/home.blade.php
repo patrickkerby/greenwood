@@ -40,18 +40,39 @@
                       <div class="row justify-content-center">                            
                         <div class="col-sm-8">{!! $item->product_details !!}</div>
                       </div>
+                      {{-- Product Recipes --}}
+                      @if($item->recipes_title)
+                        <section id="recipes" class="stockists container">
+                          <div class="row justify-content-center">
+                            <div class="col-md-10">
+                              <h2>{{ $item->recipes_title }}</h2>
+                              <h3>{{ $item->recipes_subtitle }}</h3>
+                            </div>
+                          </div>
+                          <div class="row"> 
+                          @if($item->recipes)         
+                            @foreach($item->recipes as $recipe)
+                              <div class="col-md-4 col-sm-6 info">
+                                {!! $recipe->info !!}
+                                <svg viewBox="0 0 10 10"><polygon points="5,0 0,5 5,10 10,5"></polygon></svg>
+                              </div>
+                            @endforeach
+                          @endif
+                          </div>
+                        </section>
+                        @else
+                      @endif
                       {{-- Product specific gallery --}}
-                      <section class="gallery row">
-                        <div class="grid-layout col-md-12">                            
-                            @if ( $item->product_gallery ) 
-                              @foreach ($item->product_gallery as $item)
-                                  <div class="grid-item image" style="background-image: url('{{ $item->sizes->large }}');">
-                                      <a href="{{ $item->url }}" target="_blank"></a>
-                                  </div>
+                        <section class="gallery row">
+                          <div class="grid-layout col-md-12">                            
+                              @foreach ($item->product_gallery as $photo)
+                                <div class="grid-item image" style="background-image: url('{{ $photo->sizes->large }}');">
+                                  <a href="{{ $photo->url }}" target="_blank"></a>
+                                </div>
                               @endforeach
-                            @endif
-                        </div>  
-                      </section>
+                          </div>  
+                        </section>
+                        
                       <div class="row justify-content-center">
                         <img src="@asset('images/GreenwoodBadge.svg')" alt="Greenwood Distillers Logo" class="logo-badge col-sm-4" />
                       </div>
