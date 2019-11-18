@@ -18346,6 +18346,27 @@ footer .nav .stockists a {
   width: 100%;
 }
 
+/* line 308, resources/assets/styles/layouts/_pages.scss */
+
+#recipes.stockists {
+  border-top: solid 2px #c2967b;
+  margin-top: 4rem;
+  border-bottom: solid 2px #c2967b;
+  padding-bottom: 4rem;
+}
+
+/* line 314, resources/assets/styles/layouts/_pages.scss */
+
+#recipes.stockists svg {
+  margin: 1.5rem 0 0 0;
+}
+
+/* line 318, resources/assets/styles/layouts/_pages.scss */
+
+#recipes.stockists p {
+  margin-bottom: 0.25rem;
+}
+
 /* line 1, resources/assets/styles/layouts/_tinymce.scss */
 
 body#tinymce {

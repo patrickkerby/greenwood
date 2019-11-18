@@ -304,3 +304,18 @@ section.carousel-fade {
     width: 100%;
   }
 }
+
+#recipes.stockists {
+  border-top: solid 2px $bronze-light;
+  margin-top: 4rem;
+  border-bottom: solid 2px $bronze-light;
+  padding-bottom: 4rem;
+
+  svg {
+    margin: 1.5rem 0 0 0;
+  }
+
+  p {
+    margin-bottom: 0.25rem;
+  }
+}
