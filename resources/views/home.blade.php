@@ -63,7 +63,9 @@
                         @else
                       @endif
                       {{-- Product specific gallery --}}
-                        <section class="gallery row">
+                      
+                      @if($item->product_gallery)
+                      <section class="gallery row">
                           <div class="grid-layout col-md-12">                            
                               @foreach ($item->product_gallery as $photo)
                                 <div class="grid-item image" style="background-image: url('{{ $photo->sizes->large }}');">
@@ -72,7 +74,7 @@
                               @endforeach
                           </div>  
                         </section>
-                        
+                       @endif 
                       <div class="row justify-content-center">
                         <img src="@asset('images/GreenwoodBadge.svg')" alt="Greenwood Distillers Logo" class="logo-badge col-sm-4" />
                       </div>
