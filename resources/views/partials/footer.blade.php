@@ -26,6 +26,8 @@
           <p><?php echo $details; ?></p>
         <?php endwhile; ?>
         <address>#2, 306 Main Avenue<br />Sundre, Alberta</address>
+        <a href="https://www.instagram.com/greenwooddistillers/" target="_blank" class="social"><img src="@asset('images/instagram.svg')" alt="Instagram Logo" /></a>
+        <a href="https://www.facebook.com/greenwooddistillers" target="_blank" class="social"><img src="@asset('images/facebook.svg')" alt="Facebook Logo" /></a>
       </div>
       <?php else :
       endif; ?>
