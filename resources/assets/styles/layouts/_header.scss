@@ -38,7 +38,7 @@
   height: 85vh;
 
   img {
-    max-width: 80vw;
+    max-width: 80%;
     margin-bottom: 2rem;
     position: static;
   }
@@ -92,7 +92,7 @@ nav.nav-primary {
 .banner .nav a {
   @extend .nav-link;
 
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
   font-family: $bold;
   transition: color 0.4s ease;
   letter-spacing: -0.05em;
@@ -183,5 +183,11 @@ button:focus {
         padding: 15px;
       }
     }
+  }
+}
+
+.subheading {
+  p {
+    margin: 1rem 0 3rem 0;
   }
 }
