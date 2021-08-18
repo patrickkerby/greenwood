@@ -89,7 +89,7 @@
     </section>
     <section class="gallery row">
       <div class="grid-layout col-md-12">
-        <div class="grid-item feature">
+        <div class="grid-item feature"> 
           <h2>Visit us!</h2>
           <p><em><strong>visit us, we’re open for sales and tours!</strong></em></p>
           <a href="https://goo.gl/maps/hcQj7gJSrMq" class="button" target="_blank">Get Directions</a>
@@ -101,7 +101,7 @@
           if( $images ): @endphp
                   @php foreach( $images as $image ): @endphp
                       <div class="grid-item image" style="background-image: url('@php echo $image['sizes']['large']; @endphp');">
-                          <a href="@php echo $image['url']; @endphp" target="_blank"></a>
+                          <a href="@php echo $image['url']; @endphp" class="slick" target="_blank"></a>
                       </div>
                   @php endforeach; @endphp
           @php endif;		
