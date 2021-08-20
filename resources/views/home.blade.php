@@ -130,16 +130,48 @@
             <h3>{{ $stockists_subtitle }}</h3>
           </div>
         </div>
-        <div class="row">          
+        <div class="row">
           @if ($stockists)
-            @foreach ($stockists as $item)
-              <div class="col-md-4 col-sm-6 info">
-                {!! $item->info !!}
-                <svg viewBox="0 0 10 10"><polygon points="5,0 0,5 5,10 10,5"></polygon></svg>
-              </div>
+            @php
+              $regions = array();
+              $filtered_regions = array();
+              
+              foreach ($stockists as $item) {
+                $regions[] = $item->region;                
+              }
+
+              $filtered_regions = array_unique($regions);
+            @endphp
+
+            @foreach ($filtered_regions as $region )
+              <a class="btn btn-primary" data-toggle="collapse" href="#collapseRegion{{ $loop->iteration }}" role="button" aria-expanded="false" aria-controls="collapseRegion{{ $loop->iteration }}">
+                {{ $region }}
+              </a>
             @endforeach
           @endif
-          </div>
+        </div>
+        @if ($stockists)          
+          @foreach ($filtered_regions as $region )
+            @php
+              if ($loop->first) {
+                $show = "show";
+              }
+              else {
+                $show = "";
+              }
+            @endphp
+            <div class="accordion-collapse collapse {{ $show }} row" id="collapseRegion{{ $loop->iteration }}" data-parent="#stockists">
+              @foreach ($stockists as $item)
+                @if ($item->region == $region)
+                  <div class="col-md-4 col-sm-6 info">
+                    {!! $item->info !!}
+                    <svg viewBox="0 0 10 10"><polygon points="5,0 0,5 5,10 10,5"></polygon></svg>
+                  </div>
+                @endif                  
+              @endforeach
+            </div>
+            @endforeach
+          @endif
         @if ($stockists_cta)
           <a class="button" href="{{ $stockists_cta->url }}" target="{{ $stockists_cta->target }}">{{ $stockists_cta->title }}</a>
         @endif
