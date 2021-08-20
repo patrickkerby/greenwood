@@ -130,24 +130,26 @@
             <h3>{{ $stockists_subtitle }}</h3>
           </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-around">
           @if ($stockists)
             @php
               $regions = array();
-              $filtered_regions = array();
-              
+              $filtered_regions = array();              
               foreach ($stockists as $item) {
                 $regions[] = $item->region;                
               }
-
               $filtered_regions = array_unique($regions);
             @endphp
 
-            @foreach ($filtered_regions as $region )
-              <a class="btn btn-primary" data-toggle="collapse" href="#collapseRegion{{ $loop->iteration }}" role="button" aria-expanded="false" aria-controls="collapseRegion{{ $loop->iteration }}">
-                {{ $region }}
-              </a>
-            @endforeach
+            <ul class="nav justify-content-center">
+              @foreach ($filtered_regions as $region )
+                <li class="menu-item">
+                  <a class="@if ($loop->first) show @else collapsed @endif" data-toggle="collapse" href="#collapseRegion{{ $loop->iteration }}" role="button" aria-expanded="false" aria-controls="collapseRegion{{ $loop->iteration }}">
+                    {{ $region }}
+                  </a>
+                </li>
+              @endforeach
+            </ul>
           @endif
         </div>
         @if ($stockists)          
