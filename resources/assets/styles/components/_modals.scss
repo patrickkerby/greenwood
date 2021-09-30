@@ -80,7 +80,8 @@
   }
 }
 
-.main .products .modal {
+.main .products .modal,
+.main .post_detail.modal {
   p,
   li,
   div {
@@ -105,5 +106,21 @@
 
   .modal-content {
     background-color: #fff;
+
+    img {
+      margin: 1.5rem;
+
+      &.alignleft {
+        margin: 1.5rem 1.5rem 1.5rem 0;
+      }
+
+      &.alignright {
+        margin: 1.5rem 0 1.5rem 1.5rem;
+      }
+    }
   }
+}
+
+.main .post_detail.modal p {
+  font-size: 18px;
 }

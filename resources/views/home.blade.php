@@ -7,6 +7,7 @@
 
   @while(have_posts()) @php the_post() @endphp
     @include('partials.content-page')
+    @include('partials.posts')
 
     <div class="row products justify-content-center">
        
@@ -179,4 +180,29 @@
         @endif
       </section>
   @endwhile
+
+  @if( have_rows('news_posts') )        
+  @foreach($news_posts as $post)
+      @if($post->additional_information)
+        <div class="post_detail modal fade" id="postModal-{{ $loop->iteration }}" tabindex="-1" role="dialog" aria-labelledby="postModalTitle" aria-hidden="true">                 
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row justify-content-center">                            
+                    <div class="col-sm-8">{!! $post->additional_information !!}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      @endif
+    @endforeach
+  @endif
 @endsection

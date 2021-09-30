@@ -113,6 +113,8 @@ nav.nav-primary {
   padding: 10rem 0 8rem 0;
   -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 90%);
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 90%);
+  position: relative;
+  z-index: 1;
 
   h3 {
     font-family: Pitch-Medium, serif;
@@ -127,7 +129,7 @@ nav.nav-primary {
 img.doodle {
   position: absolute;
   top: 69vh;
-  z-index: 1;
+  z-index: 2;
 
   @include media-breakpoint-down(md) {
     top: 80vh;
