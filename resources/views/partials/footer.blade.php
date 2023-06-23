@@ -1,11 +1,11 @@
 @php
   $footer_background = get_field('footer_background', 'option');
 @endphp
-<section class="cta container-fluid">
+{{-- <section class="cta container-fluid">
   <a href="https://goo.gl/maps/hcQj7gJSrMq" target="_blank">
     <h5>Come visit us in Sundre, Alberta! <span>Click here for directions.</span></h5>  
   </a>
-</section>
+</section> --}}
 <footer class="container-fluid" style="background-image: url('{{ $footer_background }}');">
   <svg viewBox="0 0 100 100" preserveAspectRatio="none">  
     <polygon points="0,100 0,75 50,0 100,75 100,100" class="triangle" />
@@ -25,12 +25,16 @@
           <h4><?php echo $title; ?></h4>
           <p><?php echo $details; ?></p>
         <?php endwhile; ?>
-        <address>#2, 306 Main Avenue<br />Sundre, Alberta</address>
+        <address>#2, 306 Main Avenue<br />Sundre, Alberta</address>        
+      </div>
+      <?php else : ?>
+      <?php
+      endif; ?>
+      <div>
         <a href="https://www.instagram.com/greenwooddistillers/" target="_blank" class="social"><img src="@asset('images/instagram.svg')" alt="Instagram Logo" /></a>
         <a href="https://www.facebook.com/greenwooddistillers" target="_blank" class="social"><img src="@asset('images/facebook.svg')" alt="Facebook Logo" /></a>
       </div>
-      <?php else :
-      endif; ?>
+  </div>
       @php dynamic_sidebar('sidebar-footer') @endphp
       <div class="nav col-sm-12">
         @if (has_nav_menu('primary_navigation'))
