@@ -25,6 +25,5 @@
         </div>
       </div>
     </section>
-    <section id="map" class="map no-gutters"></section>
   @endwhile
 @endsection
