@@ -90,9 +90,9 @@
     <section class="gallery row">
       <div class="grid-layout col-md-12">
         <div class="grid-item feature"> 
-          <h2>Visit us!</h2>
-          <p><em><strong>visit us, we’re open for sales and tours!</strong></em></p>
-          <a href="https://goo.gl/maps/hcQj7gJSrMq" class="button" target="_blank">Get Directions</a>
+          <h2>Keep up!</h2>
+          <p><em><strong>follow us on socials for new product releases.</strong></em></p>
+          <a href="https://www.instagram.com/greenwooddistillers/" class="button" target="_blank">Instagram</a>
         </div>
         @php 
 
